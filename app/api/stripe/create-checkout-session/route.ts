@@ -31,7 +31,7 @@ export async function POST() {
     const stripe = new Stripe(secretKey);
 
     const session = await stripe.checkout.sessions.create({
-      ui_mode: "embedded",
+      ui_mode: "embedded_page",
       mode: "subscription",
       line_items: [
         {
