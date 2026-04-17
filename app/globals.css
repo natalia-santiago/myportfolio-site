@@ -2349,6 +2349,64 @@ a {
   object-fit: cover;
 }
 
+.portfolio-project-image-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: zoom-in;
+}
+
+.portfolio-project-image-button:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 6px;
+  border-radius: 22px;
+}
+
+.portfolio-hover-zoom {
+  position: relative;
+}
+
+.portfolio-hover-zoom .portfolio-project-image {
+  transition: transform 0.35s ease;
+}
+
+.portfolio-image-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(17, 17, 17, 0.28);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.portfolio-zoom-icon {
+  font-size: 2rem;
+  color: #ffffff;
+  transform: scale(0.88);
+  transition: transform 0.25s ease;
+}
+
+.portfolio-hover-zoom:hover .portfolio-project-image,
+.portfolio-project-image-button:focus-visible .portfolio-project-image {
+  transform: scale(1.035);
+}
+
+.portfolio-hover-zoom:hover .portfolio-image-overlay,
+.portfolio-project-image-button:focus-visible .portfolio-image-overlay {
+  opacity: 1;
+}
+
+.portfolio-hover-zoom:hover .portfolio-zoom-icon,
+.portfolio-project-image-button:focus-visible .portfolio-zoom-icon {
+  transform: scale(1);
+}
+
 .portfolio-cta {
   max-width: 760px;
   margin: 36px auto 0;
@@ -2437,82 +2495,6 @@ a {
   background: rgba(255, 80, 80, 0.12);
   border-color: rgba(255, 80, 80, 0.3);
   box-shadow: 0 10px 20px rgba(255, 80, 80, 0.15);
-}
-
-/* =========================
-   CASE STUDY COMPARISON
-========================= */
-
-.comparison-section {
-  margin-top: 80px;
-}
-
-.comparison-title {
-  font-family: var(--font-league-spartan);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--green);
-  margin-bottom: 24px;
-}
-
-.comparison-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-.comparison-card {
-  background: white;
-  border-radius: 16px;
-  padding: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-}
-
-.comparison-label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #888;
-  margin-bottom: 8px;
-}
-
-.comparison-card img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.case-study-page {
-  padding: 80px 20px;
-}
-
-.case-study-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.case-study-title {
-  font-family: var(--font-league-spartan);
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--green);
-}
-
-.case-study-subtitle {
-  margin-top: 8px;
-  font-size: 1.1rem;
-  color: #666;
-}
-
-.case-study-text {
-  margin-top: 24px;
-  max-width: 700px;
-  line-height: 1.7;
-}
-
-/* Desktop */
-@media (min-width: 768px) {
-  .comparison-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (max-width: 1024px) {

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Lightbox from "@/components/Lightbox";
-import { FaGithub, FaGlobe } from "react-icons/fa";
+import { FaGithub, FaGlobe, FaSearchPlus } from "react-icons/fa";
 
 export default function PortfolioPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -85,7 +85,7 @@ export default function PortfolioPage() {
                       target="_blank"
                       rel="noreferrer"
                       className="icon-circle"
-                      aria-label="Live Website"
+                      aria-label="Live website"
                     >
                       <FaGlobe />
                     </a>
@@ -95,7 +95,7 @@ export default function PortfolioPage() {
                       target="_blank"
                       rel="noreferrer"
                       className="icon-circle"
-                      aria-label="GitHub Repository"
+                      aria-label="GitHub repository"
                     >
                       <FaGithub />
                     </a>
@@ -109,12 +109,15 @@ export default function PortfolioPage() {
                     onClick={() => setSelectedImage("/images/pr-portfolio1.png")}
                     aria-label="Open P&R Workforce preview image 1"
                   >
-                    <div className="portfolio-project-image-wrap">
+                    <div className="portfolio-project-image-wrap portfolio-hover-zoom">
                       <img
                         src="/images/pr-portfolio1.png"
                         alt="P&R Workforce homepage preview showing the live client website layout and branding."
                         className="portfolio-project-image"
                       />
+                      <div className="portfolio-image-overlay" aria-hidden="true">
+                        <FaSearchPlus className="portfolio-zoom-icon" />
+                      </div>
                     </div>
                   </button>
 
@@ -124,12 +127,15 @@ export default function PortfolioPage() {
                     onClick={() => setSelectedImage("/images/pr-portfolio2.png")}
                     aria-label="Open P&R Workforce preview image 2"
                   >
-                    <div className="portfolio-project-image-wrap">
+                    <div className="portfolio-project-image-wrap portfolio-hover-zoom">
                       <img
                         src="/images/pr-portfolio2.png"
                         alt="P&R Workforce website preview showing a second view of the client website design and responsive presentation."
                         className="portfolio-project-image"
                       />
+                      <div className="portfolio-image-overlay" aria-hidden="true">
+                        <FaSearchPlus className="portfolio-zoom-icon" />
+                      </div>
                     </div>
                   </button>
                 </div>
@@ -178,7 +184,7 @@ export default function PortfolioPage() {
                       target="_blank"
                       rel="noreferrer"
                       className="icon-circle"
-                      aria-label="Live Demo"
+                      aria-label="Live demo"
                     >
                       <FaGlobe />
                     </a>
@@ -188,7 +194,7 @@ export default function PortfolioPage() {
                       target="_blank"
                       rel="noreferrer"
                       className="icon-circle"
-                      aria-label="GitHub Repository"
+                      aria-label="GitHub repository"
                     >
                       <FaGithub />
                     </a>
@@ -204,12 +210,15 @@ export default function PortfolioPage() {
                     }
                     aria-label="Open Job Tracker dashboard image"
                   >
-                    <div className="portfolio-project-image-wrap">
+                    <div className="portfolio-project-image-wrap portfolio-hover-zoom">
                       <img
                         src="/images/jobtracker-dashboard.png"
                         alt="Job Tracker dashboard showing job application records, filters, and performance metrics."
                         className="portfolio-project-image"
                       />
+                      <div className="portfolio-image-overlay" aria-hidden="true">
+                        <FaSearchPlus className="portfolio-zoom-icon" />
+                      </div>
                     </div>
                   </button>
 
@@ -221,12 +230,15 @@ export default function PortfolioPage() {
                     }
                     aria-label="Open Job Tracker add job image"
                   >
-                    <div className="portfolio-project-image-wrap">
+                    <div className="portfolio-project-image-wrap portfolio-hover-zoom">
                       <img
                         src="/images/jobtracker-add-job.png"
                         alt="Job Tracker add job page showing the form used to create and store new application records."
                         className="portfolio-project-image"
                       />
+                      <div className="portfolio-image-overlay" aria-hidden="true">
+                        <FaSearchPlus className="portfolio-zoom-icon" />
+                      </div>
                     </div>
                   </button>
                 </div>
