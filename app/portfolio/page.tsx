@@ -1,10 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Lightbox from "@/components/Lightbox";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 export default function PortfolioPage() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <div className="page-shell">
       <Header />
@@ -45,9 +49,7 @@ export default function PortfolioPage() {
                       Designed and developed a responsive website from concept to
                       deployment.
                     </li>
-                    <li>
-                      Built with Next.js, React, and Tailwind CSS.
-                    </li>
+                    <li>Built with Next.js, React, and Tailwind CSS.</li>
                     <li>
                       Implemented SEO best practices, metadata, and local
                       keyword optimization.
@@ -101,21 +103,35 @@ export default function PortfolioPage() {
                 </div>
 
                 <div className="portfolio-project-media">
-                  <div className="portfolio-project-image-wrap">
-                    <img
-                      src="/images/pr-portfolio1.png"
-                      alt="P&R Workforce homepage preview showing the live client website layout and branding."
-                      className="portfolio-project-image"
-                    />
-                  </div>
+                  <button
+                    type="button"
+                    className="portfolio-project-image-button"
+                    onClick={() => setSelectedImage("/images/pr-portfolio1.png")}
+                    aria-label="Open P&R Workforce preview image 1"
+                  >
+                    <div className="portfolio-project-image-wrap">
+                      <img
+                        src="/images/pr-portfolio1.png"
+                        alt="P&R Workforce homepage preview showing the live client website layout and branding."
+                        className="portfolio-project-image"
+                      />
+                    </div>
+                  </button>
 
-                  <div className="portfolio-project-image-wrap">
-                    <img
-                      src="/images/pr-portfolio2.png"
-                      alt="P&R Workforce website preview showing a second view of the client website design and responsive presentation."
-                      className="portfolio-project-image"
-                    />
-                  </div>
+                  <button
+                    type="button"
+                    className="portfolio-project-image-button"
+                    onClick={() => setSelectedImage("/images/pr-portfolio2.png")}
+                    aria-label="Open P&R Workforce preview image 2"
+                  >
+                    <div className="portfolio-project-image-wrap">
+                      <img
+                        src="/images/pr-portfolio2.png"
+                        alt="P&R Workforce website preview showing a second view of the client website design and responsive presentation."
+                        className="portfolio-project-image"
+                      />
+                    </div>
+                  </button>
                 </div>
               </div>
             </article>
@@ -180,21 +196,39 @@ export default function PortfolioPage() {
                 </div>
 
                 <div className="portfolio-project-media">
-                  <div className="portfolio-project-image-wrap">
-                    <img
-                      src="/images/jobtracker-dashboard.png"
-                      alt="Job Tracker dashboard showing job application records, filters, and performance metrics."
-                      className="portfolio-project-image"
-                    />
-                  </div>
+                  <button
+                    type="button"
+                    className="portfolio-project-image-button"
+                    onClick={() =>
+                      setSelectedImage("/images/jobtracker-dashboard.png")
+                    }
+                    aria-label="Open Job Tracker dashboard image"
+                  >
+                    <div className="portfolio-project-image-wrap">
+                      <img
+                        src="/images/jobtracker-dashboard.png"
+                        alt="Job Tracker dashboard showing job application records, filters, and performance metrics."
+                        className="portfolio-project-image"
+                      />
+                    </div>
+                  </button>
 
-                  <div className="portfolio-project-image-wrap">
-                    <img
-                      src="/images/jobtracker-add-job.png"
-                      alt="Job Tracker add job page showing the form used to create and store new application records."
-                      className="portfolio-project-image"
-                    />
-                  </div>
+                  <button
+                    type="button"
+                    className="portfolio-project-image-button"
+                    onClick={() =>
+                      setSelectedImage("/images/jobtracker-add-job.png")
+                    }
+                    aria-label="Open Job Tracker add job image"
+                  >
+                    <div className="portfolio-project-image-wrap">
+                      <img
+                        src="/images/jobtracker-add-job.png"
+                        alt="Job Tracker add job page showing the form used to create and store new application records."
+                        className="portfolio-project-image"
+                      />
+                    </div>
+                  </button>
                 </div>
               </div>
             </article>
@@ -216,6 +250,13 @@ export default function PortfolioPage() {
           </a>
         </section>
       </main>
+
+      {selectedImage && (
+        <Lightbox
+          src={selectedImage}
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
 
       <Footer />
     </div>
