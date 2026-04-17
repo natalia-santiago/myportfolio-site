@@ -7,9 +7,14 @@ export default function Header() {
   const pathname = usePathname();
 
   const isActive = (href: string) => {
-    if (href === "/") return pathname === "/";
-    return pathname.startsWith(href);
-  };
+  if (href === "/") return pathname === "/";
+
+  // Exact match for About Overview
+  if (href === "/about") return pathname === "/about";
+
+  // Everything else can use startsWith
+  return pathname.startsWith(href);
+};
 
   const isAboutActive = pathname.startsWith("/about");
 
