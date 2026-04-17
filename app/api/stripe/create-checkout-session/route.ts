@@ -1,22 +1,18 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const secretKey = process.env.STRIPE_SECRET_KEY;
-
-if (!secretKey) {
-  throw new Error("Missing STRIPE_SECRET_KEY");
-}
-
-const stripe = new Stripe(secretKey);
-
 export async function POST() {
   try {
+    const secretKey = process.env.STRIPE_SECRET_KEY;
     const priceId = process.env.STRIPE_MAINTENANCE_PRICE_ID;
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
-    console.log("PRICE ID:", priceId);
-    console.log("SITE URL:", siteUrl);
-    console.log("SECRET KEY PREFIX:", process.env.STRIPE_SECRET_KEY?.slice(0, 10));
+    if (!secretKey) {
+      return NextResponse.json(
+        { error: "Missing STRIPE_SECRET_KEY" },
+        { status: 500 }
+      );
+    }
 
     if (!priceId) {
       return NextResponse.json(
@@ -32,8 +28,10 @@ export async function POST() {
       );
     }
 
+    const stripe = new Stripe(secretKey);
+
     const session = await stripe.checkout.sessions.create({
-      ui_mode: "embedded_page",
+      ui_mode: "embedded",
       mode: "subscription",
       line_items: [
         {
