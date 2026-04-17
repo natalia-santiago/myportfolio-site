@@ -1,22 +1,21 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import {
   EmbeddedCheckout,
   EmbeddedCheckoutProvider,
 } from "@stripe/react-stripe-js";
 
-const publishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
-
-if (!publishableKey) {
-  throw new Error("Missing NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY");
-}
-
-const stripePromise = loadStripe(publishableKey);
-
 export default function StripeEmbeddedCheckout() {
   const [debugError, setDebugError] = useState<string | null>(null);
+
+  const publishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+
+  const stripePromise = useMemo(() => {
+    if (!publishableKey) return null;
+    return loadStripe(publishableKey);
+  }, [publishableKey]);
 
   const fetchClientSecret = useCallback(async () => {
     setDebugError(null);
@@ -45,6 +44,17 @@ export default function StripeEmbeddedCheckout() {
 
     return data.clientSecret;
   }, []);
+
+  if (!publishableKey || !stripePromise) {
+    return (
+      <div className="payment-debug-box">
+        <p className="payment-debug-title">Stripe checkout unavailable</p>
+        <p className="payment-debug-text">
+          Missing NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY.
+        </p>
+      </div>
+    );
+  }
 
   if (debugError) {
     return (

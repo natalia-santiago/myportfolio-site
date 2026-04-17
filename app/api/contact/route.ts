@@ -34,8 +34,14 @@ export async function POST(request: Request) {
       process.env.CONTACT_FROM_EMAIL ||
       "Portfolio Contact <onboarding@resend.dev>";
 
-    const toEmail =
-      process.env.CONTACT_TO_EMAIL || "natalia.santiago.dev@gmail.com";
+    const toEmail = process.env.CONTACT_TO_EMAIL;
+
+    if (!toEmail) {
+      return NextResponse.json(
+        { error: "Missing CONTACT_TO_EMAIL" },
+        { status: 500 }
+      );
+    }
 
     await resend.emails.send({
       from: fromEmail,
