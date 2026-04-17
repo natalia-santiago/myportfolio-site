@@ -2439,6 +2439,82 @@ a {
   box-shadow: 0 10px 20px rgba(255, 80, 80, 0.15);
 }
 
+/* =========================
+   CASE STUDY COMPARISON
+========================= */
+
+.comparison-section {
+  margin-top: 80px;
+}
+
+.comparison-title {
+  font-family: var(--font-league-spartan);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 24px;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.comparison-card {
+  background: white;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.comparison-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.comparison-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.case-study-page {
+  padding: 80px 20px;
+}
+
+.case-study-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.case-study-title {
+  font-family: var(--font-league-spartan);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.case-study-subtitle {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.case-study-text {
+  margin-top: 24px;
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .comparison-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 1024px) {
   .portfolio-project-content {
     grid-template-columns: 1fr;

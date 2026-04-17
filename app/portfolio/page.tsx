@@ -26,22 +26,124 @@ export default function PortfolioPage() {
               <div className="portfolio-project-content">
                 <div className="portfolio-project-copy">
                   <p className="portfolio-project-eyebrow">
+                    September 2025 · Client Website
+                  </p>
+
+                  <h2 className="portfolio-project-title">
+                    P&amp;R Workforce LLC
+                  </h2>
+
+                  <p className="portfolio-project-description">
+                    A production-ready staffing company website designed and
+                    developed to support business visibility, responsive access
+                    across devices, and lead generation for employers and job
+                    seekers.
+                  </p>
+
+                  <ul className="portfolio-project-features">
+                    <li>
+                      Designed and developed a responsive website from concept to
+                      deployment.
+                    </li>
+                    <li>
+                      Built with Next.js, React, and Tailwind CSS.
+                    </li>
+                    <li>
+                      Implemented SEO best practices, metadata, and local
+                      keyword optimization.
+                    </li>
+                    <li>
+                      Integrated contact forms and dynamic components to support
+                      lead generation.
+                    </li>
+                    <li>
+                      Managed deployment, domain configuration, and hosting.
+                    </li>
+                  </ul>
+
+                  <div className="portfolio-project-tags">
+                    <span className="portfolio-project-tag">UI/UX Design</span>
+                    <span className="portfolio-project-tag">
+                      Responsive Web Design
+                    </span>
+                    <span className="portfolio-project-tag">
+                      Front-End Development
+                    </span>
+                    <span className="portfolio-project-tag">Next.js</span>
+                    <span className="portfolio-project-tag">React</span>
+                    <span className="portfolio-project-tag">
+                      Tailwind CSS
+                    </span>
+                    <span className="portfolio-project-tag">SEO</span>
+                  </div>
+
+                  <div className="portfolio-project-links">
+                    <a
+                      href="https://prworkforcenc.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-circle"
+                      aria-label="Live Website"
+                    >
+                      <FaGlobe />
+                    </a>
+
+                    <a
+                      href="https://github.com/natalia-santiago/prworkforce-site"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-circle"
+                      aria-label="GitHub Repository"
+                    >
+                      <FaGithub />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="portfolio-project-media">
+                  <div className="portfolio-project-image-wrap">
+                    <img
+                      src="/images/pr-portfolio1.png"
+                      alt="P&R Workforce homepage preview showing the live client website layout and branding."
+                      className="portfolio-project-image"
+                    />
+                  </div>
+
+                  <div className="portfolio-project-image-wrap">
+                    <img
+                      src="/images/pr-portfolio2.png"
+                      alt="P&R Workforce website preview showing a second view of the client website design and responsive presentation."
+                      className="portfolio-project-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article className="portfolio-project-card">
+              <div className="portfolio-project-content">
+                <div className="portfolio-project-copy">
+                  <p className="portfolio-project-eyebrow">
                     January 2026 · Full-Stack Web Application
                   </p>
 
                   <h2 className="portfolio-project-title">Job Tracker</h2>
 
                   <p className="portfolio-project-description">
-                    A database-driven job tracking application built with React, Node.js, Express, and MongoDB for managing job applications through a full-stack workflow.
-                </p>
+                    A database-driven job tracking application built with React,
+                    Node.js, Express, and MongoDB for managing job applications
+                    through a full-stack workflow.
+                  </p>
 
                   <ul className="portfolio-project-features">
-                    <li>Full-stack React, Express, and MongoDB application.</li>
+                    <li>
+                      Full-stack React, Express, and MongoDB application.
+                    </li>
                     <li>CRUD functionality for managing job records.</li>
                     <li>JWT authentication with protected routes.</li>
                     <li>Filtering, sorting, and status tracking.</li>
                     <li>Responsive and scalable UI design.</li>
-                    </ul>
+                  </ul>
 
                   <div className="portfolio-project-tags">
                     <span className="portfolio-project-tag">React</span>
@@ -56,25 +158,25 @@ export default function PortfolioPage() {
 
                   <div className="portfolio-project-links">
                     <a
-                        href="https://job-tracker-frontend.netlify.app/register"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="icon-circle"
-                        aria-label="Live Demo"
+                      href="https://job-tracker-frontend.netlify.app/register"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-circle"
+                      aria-label="Live Demo"
                     >
-                        <FaGlobe />
+                      <FaGlobe />
                     </a>
 
                     <a
-                        href="https://github.com/natalia-santiago/job-tracker"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="icon-circle"
-                        aria-label="GitHub Repository"
+                      href="https://github.com/natalia-santiago/job-tracker"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-circle"
+                      aria-label="GitHub Repository"
                     >
-                        <FaGithub />
+                      <FaGithub />
                     </a>
-                    </div>
+                  </div>
                 </div>
 
                 <div className="portfolio-project-media">
