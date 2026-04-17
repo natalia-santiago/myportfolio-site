@@ -1,10 +1,19 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
   try {
+    const resendApiKey = process.env.RESEND_API_KEY;
+
+    if (!resendApiKey) {
+      return NextResponse.json(
+        { error: "Missing RESEND_API_KEY" },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(resendApiKey);
+
     const body = await request.json();
 
     const name = body.name?.trim();
@@ -21,9 +30,16 @@ export async function POST(request: Request) {
       );
     }
 
+    const fromEmail =
+      process.env.CONTACT_FROM_EMAIL ||
+      "Portfolio Contact <onboarding@resend.dev>";
+
+    const toEmail =
+      process.env.CONTACT_TO_EMAIL || "natalia.santiago.dev@gmail.com";
+
     await resend.emails.send({
-      from: process.env.CONTACT_FROM_EMAIL || "Portfolio Contact <onboarding@resend.dev>",
-      to: process.env.CONTACT_TO_EMAIL || "",
+      from: fromEmail,
+      to: toEmail,
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
       html: `
@@ -42,6 +58,18 @@ export async function POST(request: Request) {
           <p>${message.replace(/\n/g, "<br />")}</p>
         </div>
       `,
+      text: `
+New Contact Form Submission
+
+Name: ${name}
+Email: ${email}
+Business Name: ${businessName}
+Current Website: ${website}
+Service Needed: ${service}
+
+Message:
+${message}
+      `.trim(),
     });
 
     return NextResponse.json({ success: true });
