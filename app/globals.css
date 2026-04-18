@@ -2526,6 +2526,14 @@ a {
   color: #999;
 }
 
+.ux-comparison-section {
+  margin-top: 22px; /* instead of 28px */
+}
+
+.ux-comparison-label {
+  opacity: 0.85;
+}
+
 /* Mobile fallback */
 @media (max-width: 900px) {
   .ux-comparison-grid {
