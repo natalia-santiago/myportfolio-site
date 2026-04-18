@@ -49,11 +49,11 @@ function ComparisonSection({
                 onClick={() => setSelectedImage(before)}
                 aria-label={`Open ${title} production version`}
               >
-                <div className="portfolio-project-image-wrap portfolio-hover-zoom">
+                <div className="portfolio-project-image-wrap portfolio-hover-zoom ux-comparison-image-wrap">
                   <img
                     src={before}
                     alt={beforeAlt}
-                    className="portfolio-project-image"
+                    className="portfolio-project-image ux-comparison-image"
                   />
                   <div className="portfolio-image-overlay" aria-hidden="true">
                     <FaSearchPlus className="portfolio-zoom-icon" />
@@ -71,11 +71,11 @@ function ComparisonSection({
                 onClick={() => setSelectedImage(after)}
                 aria-label={`Open ${title} UX concept`}
               >
-                <div className="portfolio-project-image-wrap portfolio-hover-zoom">
+                <div className="portfolio-project-image-wrap portfolio-hover-zoom ux-comparison-image-wrap">
                   <img
                     src={after}
                     alt={afterAlt}
-                    className="portfolio-project-image"
+                    className="portfolio-project-image ux-comparison-image"
                   />
                   <div className="portfolio-image-overlay" aria-hidden="true">
                     <FaSearchPlus className="portfolio-zoom-icon" />

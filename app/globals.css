@@ -2491,6 +2491,48 @@ a {
   transform: translateY(-1px);
 }
 
+/* =========================
+   UX COMPARISON IMAGE FIX
+========================= */
+
+.ux-comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.ux-comparison-image-wrap {
+  max-height: 420px; /* 🔥 THIS is the fix */
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+/* Make tall screenshots scrollable inside frame */
+.ux-comparison-image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: subtle scroll effect on hover */
+.ux-comparison-image-wrap:hover {
+  overflow-y: auto;
+}
+
+.ux-comparison-label::after {
+  content: " (click to zoom)";
+  font-size: 0.75rem;
+  color: #999;
+}
+
+/* Mobile fallback */
+@media (max-width: 900px) {
+  .ux-comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .icon-circle {
   display: inline-flex;
   align-items: center;
