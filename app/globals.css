@@ -2506,6 +2506,7 @@ a {
   max-height: 420px; /* 🔥 THIS is the fix */
   overflow: hidden;
   border-radius: 18px;
+  min-height: 220px;
 }
 
 /* Make tall screenshots scrollable inside frame */
@@ -2532,6 +2533,18 @@ a {
 
 .ux-comparison-label {
   opacity: 0.85;
+}
+
+.ux-comparison-title {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+.ux-comparison-column:first-child .ux-comparison-label {
+  color: #666; /* softer */
+}
+
+.ux-comparison-column:last-child .ux-comparison-label {
+  color: var(--coral); /* emphasis */
 }
 
 /* Mobile fallback */

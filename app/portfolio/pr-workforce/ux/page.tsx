@@ -104,8 +104,13 @@ export default function PRWorkforceUXPage() {
           <h1 className="portfolio-title">UX Exploration</h1>
 
           <p className="portfolio-intro">
-            P&amp;R Workforce LLC. A production website alongside an alternative UX direction focused on structure, clarity, and user flow.
-            </p>
+            P&amp;R Workforce LLC. A production website alongside an alternative
+            UX direction focused on structure, clarity, and user flow.
+          </p>
+
+          <a href="/portfolio" className="portfolio-project-ux-button">
+            Back to Portfolio
+          </a>
         </section>
 
         <section className="portfolio-grid-section">
@@ -159,7 +164,7 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Services Section"
-          description="This version improves grouping, readability, and spacing so the service offering feels easier to scan and more visually organized."
+          description="Improves grouping, readability, and spacing to make the service offering easier to scan and more visually organized."
           before="/images/services-pr.png"
           after="/images/ux-services-pr.png"
           beforeAlt="Production services section for P&R Workforce"
@@ -188,7 +193,7 @@ export default function PRWorkforceUXPage() {
           title="Contact Prompt"
           description="This refinement explores stronger CTA visibility and cleaner supporting layout, helping the user understand the next step more quickly."
           before="/images/contact-prompt-pr.png"
-          after="/images/ux-contact-prompt-pr.png"
+          after="/images/us-contact-prompt-pr.png"
           beforeAlt="Production contact prompt for P&R Workforce"
           afterAlt="UX concept contact prompt for P&R Workforce"
         />
