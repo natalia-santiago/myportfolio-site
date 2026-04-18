@@ -4,7 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Lightbox from "@/components/Lightbox";
-import { FaSearchPlus } from "react-icons/fa";
+import { FaSearchPlus, FaGlobe, FaGithub } from "react-icons/fa";
 
 type ComparisonSectionProps = {
   title: string;
@@ -135,6 +135,28 @@ export default function PRWorkforceUXPage() {
                 content and context to study how layout, spacing, and visual hierarchy
                 can shape the overall user experience.
               </p>
+
+              <div className="portfolio-project-links">
+                <a
+                  href="https://prworkforce-ux-concept.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-circle"
+                  aria-label="UX concept live website"
+                >
+                  <FaGlobe />
+                </a>
+
+                <a
+                  href="https://github.com/natalia-santiago/prworkforce-ux"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-circle"
+                  aria-label="UX concept GitHub repository"
+                >
+                  <FaGithub />
+                </a>
+              </div>
             </div>
           </article>
         </section>
