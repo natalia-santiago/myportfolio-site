@@ -2313,7 +2313,7 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .portfolio-project-links .icon-circle {
@@ -2536,7 +2536,7 @@ a {
 }
 
 .ux-comparison-label {
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .ux-comparison-title {
