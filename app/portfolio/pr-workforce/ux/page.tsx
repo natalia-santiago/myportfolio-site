@@ -181,19 +181,19 @@ export default function PRWorkforceUXPage() {
         />
 
         <ComparisonSection
-          title="Contact Section"
+          title="Contact Page"
           description="The updated contact area improves clarity, hierarchy, and form presentation to support a more confident and conversion-focused experience."
           before="/images/contact-pr.jpeg"
           after="/images/ux-contact-pr.jpeg"
-          beforeAlt="Production contact section for P&R Workforce"
-          afterAlt="UX concept contact section for P&R Workforce"
+          beforeAlt="Production contact page for P&R Workforce"
+          afterAlt="UX concept contact page for P&R Workforce"
         />
 
         <ComparisonSection
           title="Contact Prompt"
           description="This refinement explores stronger CTA visibility and cleaner supporting layout, helping the user understand the next step more quickly."
           before="/images/contact-prompt-pr.png"
-          after="/images/us-contact-prompt-pr.png"
+          after="/images/ux-contact-prompt-pr.png"
           beforeAlt="Production contact prompt for P&R Workforce"
           afterAlt="UX concept contact prompt for P&R Workforce"
         />
