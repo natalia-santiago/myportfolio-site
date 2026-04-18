@@ -76,7 +76,6 @@ export default function PortfolioPage() {
                     <span className="portfolio-project-tag">
                       Tailwind CSS
                     </span>
-                    <span className="portfolio-project-tag">SEO</span>
                   </div>
 
                   <div className="portfolio-project-links">
@@ -100,6 +99,13 @@ export default function PortfolioPage() {
                       <FaGithub />
                     </a>
                   </div>
+
+                  <a
+                    href="/portfolio/pr-workforce/ux"
+                    className="portfolio-project-ux-button"
+                  >
+                    UX Exploration
+                  </a>
                 </div>
 
                 <div className="portfolio-project-media">

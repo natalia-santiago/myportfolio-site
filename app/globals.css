@@ -2469,6 +2469,28 @@ a {
   outline-offset: 3px;
 }
 
+.portfolio-project-ux-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 2px solid var(--coral);
+  font-family: var(--font-league-spartan), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--coral);
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.portfolio-project-ux-button:hover {
+  background: var(--coral);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
 .icon-circle {
   display: inline-flex;
   align-items: center;
