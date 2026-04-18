@@ -240,9 +240,7 @@ export default function PRWorkforceUXPage() {
           <h2 className="portfolio-cta-title">Reflection</h2>
 
           <p className="portfolio-cta-text">
-            This exploration highlights how layout, spacing, and hierarchy can
-            significantly influence clarity and usability, even when working with
-            the same content and overall business goals.
+            This exploration shows how layout, spacing, and hierarchy can influence clarity and usability while working within the same content and goals.
           </p>
         </section>
       </main>

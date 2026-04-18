@@ -2313,7 +2313,7 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 .portfolio-project-links .icon-circle {
@@ -2507,7 +2507,7 @@ a {
 }
 
 .ux-comparison-image-wrap {
-  max-height: 420px; /* 🔥 THIS is the fix */
+  max-height: 420px; 
   overflow: hidden;
   border-radius: 18px;
   min-height: 200px;
@@ -2532,7 +2532,7 @@ a {
 }
 
 .ux-comparison-section {
-  margin-top: 22px; /* instead of 28px */
+  margin-top: 22px;
 }
 
 .ux-comparison-label {
@@ -2545,6 +2545,7 @@ a {
 
 .ux-comparison-column:first-child .ux-comparison-label {
   color: #666; /* softer */
+  opacity: 0.8;
 }
 
 .ux-comparison-column:last-child .ux-comparison-label {
@@ -2562,7 +2563,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 46px;        /* increased from ~40–42 */
+  width: 46px;        
   height: 46px;
   border-radius: 999px;
   background: rgba(255, 80, 80, 0.08);
@@ -2576,7 +2577,7 @@ a {
 }
 
 .icon-circle svg {
-  font-size: 1.15rem;   /* slightly larger icon */
+  font-size: 1.15rem;   
 }
 
 .icon-circle:hover {
