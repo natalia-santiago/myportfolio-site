@@ -189,7 +189,7 @@ export default function PRWorkforceUXPage() {
           title="Contact Prompt"
           description="This refinement explores stronger CTA visibility and cleaner supporting layout, helping the user understand the next step more quickly."
           before="/images/contact-prompt-pr.png"
-          after="/images/us-contact-prompt-pr.png"
+          after="/images/ux-contact-prompt-pr.png"
           beforeAlt="Production contact prompt for P&R Workforce"
           afterAlt="UX concept contact prompt for P&R Workforce"
         />
