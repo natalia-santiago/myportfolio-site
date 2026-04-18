@@ -104,9 +104,8 @@ export default function PRWorkforceUXPage() {
           <h1 className="portfolio-title">UX Exploration</h1>
 
           <p className="portfolio-intro">
-            P&amp;R Workforce LLC — production website and an alternative UX
-            direction focused on structure, clarity, and user flow.
-          </p>
+            P&amp;R Workforce LLC. A production website alongside an alternative UX direction focused on structure, clarity, and user flow.
+            </p>
         </section>
 
         <section className="portfolio-grid-section">
