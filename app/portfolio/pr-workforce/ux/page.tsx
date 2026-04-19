@@ -4,7 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Lightbox from "@/components/Lightbox";
-import { FaSearchPlus, FaGlobe, FaGithub } from "react-icons/fa";
+import { FaSearchPlus } from "react-icons/fa";
 
 type ComparisonSectionProps = {
   title: string;
@@ -40,44 +40,36 @@ function ComparisonSection({
           </div>
 
           <div className="ux-comparison-grid">
+            {/* CLIENT VERSION */}
             <div className="ux-comparison-column">
-              <p className="ux-comparison-label">Production Version</p>
+              <p className="ux-comparison-label">Client Version</p>
 
               <button
                 type="button"
                 className="portfolio-project-image-button"
                 onClick={() => setSelectedImage(before)}
-                aria-label={`Open ${title} production version`}
               >
                 <div className="portfolio-project-image-wrap portfolio-hover-zoom ux-comparison-image-wrap">
-                  <img
-                    src={before}
-                    alt={beforeAlt}
-                    className="portfolio-project-image"
-                  />
-                  <div className="portfolio-image-overlay" aria-hidden="true">
+                  <img src={before} alt={beforeAlt} className="portfolio-project-image" />
+                  <div className="portfolio-image-overlay">
                     <FaSearchPlus className="portfolio-zoom-icon" />
                   </div>
                 </div>
               </button>
             </div>
 
+            {/* UX VERSION */}
             <div className="ux-comparison-column">
-              <p className="ux-comparison-label">UX Concept</p>
+              <p className="ux-comparison-label">UX Exploration</p>
 
               <button
                 type="button"
                 className="portfolio-project-image-button"
                 onClick={() => setSelectedImage(after)}
-                aria-label={`Open ${title} UX concept`}
               >
                 <div className="portfolio-project-image-wrap portfolio-hover-zoom ux-comparison-image-wrap">
-                  <img
-                    src={after}
-                    alt={afterAlt}
-                    className="portfolio-project-image"
-                  />
-                  <div className="portfolio-image-overlay" aria-hidden="true">
+                  <img src={after} alt={afterAlt} className="portfolio-project-image" />
+                  <div className="portfolio-image-overlay">
                     <FaSearchPlus className="portfolio-zoom-icon" />
                   </div>
                 </div>
@@ -100,14 +92,20 @@ export default function PRWorkforceUXPage() {
       <Header />
 
       <main className="portfolio-page">
+
         {/* HERO */}
         <section className="portfolio-hero">
           <h1 className="portfolio-title">UX Exploration</h1>
 
           <p className="portfolio-intro">
-            P&amp;R Workforce LLC. A production website developed in collaboration
-            with the client, alongside an alternative UX direction exploring
-            structure, clarity, and user flow.
+            This UX exploration presents an alternative approach to the P&amp;R Workforce website,
+            focusing on how thoughtful adjustments to layout, hierarchy, and spacing can enhance
+            clarity and usability—while working within the same content and business goals.
+          </p>
+
+          <p className="portfolio-subtle-note">
+            The client version reflects the final website developed in collaboration with the client,
+            while this exploration highlights an alternative UX direction.
           </p>
 
           <a href="/portfolio" className="portfolio-project-ux-button">
@@ -115,49 +113,24 @@ export default function PRWorkforceUXPage() {
           </a>
         </section>
 
-        {/* INTRO */}
+        {/* PROJECT INTRO */}
         <section className="portfolio-grid-section">
           <article className="portfolio-project-card">
-            <div className="portfolio-project-copy">
-              <p className="portfolio-project-eyebrow">
-                Client Project + UX Exploration
-              </p>
+            <p className="portfolio-project-eyebrow">
+              Client Project · UX Exploration
+            </p>
 
-              <h2 className="portfolio-project-title">
-                P&amp;R Workforce UX Exploration
-              </h2>
+            <h2 className="portfolio-project-title">
+              P&amp;R Workforce UX Exploration
+            </h2>
 
-              <p className="portfolio-project-description">
-                I designed and developed the official P&amp;R Workforce website as a
-                production-ready client project, working closely with the client to
-                align the design with their goals, preferences, and business needs.
-                After launch, I explored an alternative UX direction using the same
-                content and context to study how layout, spacing, and visual hierarchy
-                can shape the overall user experience.
-              </p>
-
-              <div className="portfolio-project-links">
-                <a
-                  href="https://prworkforce-ux-concept.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-circle"
-                  aria-label="UX concept live website"
-                >
-                  <FaGlobe />
-                </a>
-
-                <a
-                  href="https://github.com/natalia-santiago/prworkforce-ux"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-circle"
-                  aria-label="UX concept GitHub repository"
-                >
-                  <FaGithub />
-                </a>
-              </div>
-            </div>
+            <p className="portfolio-project-description">
+              This project was originally developed in collaboration with a client,
+              where the final version reflects their preferences and business decisions.
+              This exploration presents an alternative UX-driven approach, demonstrating
+              how small refinements in layout, hierarchy, and spacing can improve clarity
+              and usability while maintaining the same core content.
+            </p>
           </article>
         </section>
 
@@ -165,84 +138,90 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Homepage"
-          description="The UX concept explores a more structured layout and stronger visual hierarchy, guiding users more clearly through the page while maintaining the same content and intent."
+          description="This exploration focuses on improving how information is introduced and prioritized, allowing users to more quickly understand the company’s services while maintaining the same core messaging."
           before="/images/homepage-pr.jpeg"
           after="/images/ux-homepage-pr.jpeg"
-          beforeAlt="Production homepage for P&R Workforce"
-          afterAlt="UX concept homepage for P&R Workforce"
+          beforeAlt="Homepage client version"
+          afterAlt="Homepage UX exploration"
         />
 
         <ComparisonSection
           title="Hero Section"
-          description="The updated hero focuses on clearer messaging and stronger emphasis on the primary call to action, with more breathing room to help users quickly understand the value offered."
+          description="The hero section explores clearer messaging and stronger emphasis on the primary call to action, helping users immediately understand the value offered and the next step."
           before="/images/hero-pr.png"
           after="/images/ux-hero-pr.png"
-          beforeAlt="Production hero section"
-          afterAlt="UX concept hero section"
+          beforeAlt="Hero client version"
+          afterAlt="Hero UX exploration"
         />
 
         <ComparisonSection
           title="Navigation"
-          description="This exploration introduces a more structured navigation approach, aiming to improve clarity and make it easier for users to understand where to go next."
+          description="The navigation introduces a more structured approach, making it easier for users to scan options quickly and understand where to go next."
           before="/images/navigation-pr.png"
           after="/images/ux-navigation-pr.png"
-          beforeAlt="Production navigation"
-          afterAlt="UX concept navigation"
+          beforeAlt="Navigation client version"
+          afterAlt="Navigation UX exploration"
         />
 
         <ComparisonSection
           title="Services Section"
-          description="The UX concept refines grouping and spacing, making the service offerings easier to scan and more visually organized without changing the core content."
+          description="This section explores improved grouping and spacing, making the service offerings easier to scan and more visually organized without changing the core content."
           before="/images/services-pr.png"
           after="/images/ux-services-pr.png"
-          beforeAlt="Production services section"
-          afterAlt="UX concept services section"
+          beforeAlt="Services client version"
+          afterAlt="Services UX exploration"
         />
 
         <ComparisonSection
           title="Industries Section"
-          description="This version explores a clearer structure and improved visual rhythm, helping the information feel more digestible and easier to navigate."
+          description="The layout adjustments focus on improving readability and content grouping, helping users better process the information and navigate between sections."
           before="/images/industries-pr.png"
           after="/images/ux-industries-pr.png"
-          beforeAlt="Production industries section"
-          afterAlt="UX concept industries section"
+          beforeAlt="Industries client version"
+          afterAlt="Industries UX exploration"
         />
 
         <ComparisonSection
           title="Contact Section"
-          description="The UX concept focuses on improving clarity and form structure, supporting a smoother and more intuitive experience when users are ready to get in touch."
+          description="The contact experience explores clearer structure and form hierarchy, supporting a smoother and more intuitive interaction when users are ready to reach out."
           before="/images/contact-pr.jpeg"
           after="/images/ux-contact-pr.jpeg"
-          beforeAlt="Production contact section"
-          afterAlt="UX concept contact section"
+          beforeAlt="Contact client version"
+          afterAlt="Contact UX exploration"
         />
 
         <ComparisonSection
           title="Contact Prompt"
-          description="This refinement explores stronger call-to-action visibility and clearer supporting layout, helping users better understand the next step."
+          description="This refinement emphasizes a clearer call to action, helping guide users toward the next step with stronger visual direction."
           before="/images/contact-prompt-pr.png"
           after="/images/ux-contact-prompt-pr.png"
-          beforeAlt="Production contact prompt"
-          afterAlt="UX concept contact prompt"
+          beforeAlt="Contact prompt client version"
+          afterAlt="Contact prompt UX exploration"
         />
 
         <ComparisonSection
           title="Mobile Experience"
-          description="The mobile concept explores improved spacing, readability, and visual balance, creating a more refined responsive experience while preserving the same messaging."
+          description="The mobile experience explores improved spacing, readability, and responsiveness, creating a more refined layout while preserving the same content and messaging."
           before="/images/prwork2.jpeg"
           after="/images/mobile-pr.jpeg"
-          beforeAlt="Production mobile version"
-          afterAlt="UX concept mobile version"
+          beforeAlt="Mobile client version"
+          afterAlt="Mobile UX exploration"
         />
 
         {/* REFLECTION */}
-        <section className="portfolio-cta">
-          <h2 className="portfolio-cta-title">Reflection</h2>
+        <section className="portfolio-grid-section">
+          <article className="portfolio-project-card text-center">
+            <h2 className="portfolio-project-title">Reflection</h2>
 
-          <p className="portfolio-cta-text">
-            This exploration shows how layout, spacing, and hierarchy can influence clarity and usability while working within the same content and goals.
-          </p>
+            <p className="portfolio-project-description">
+              This exploration demonstrates how iterative UX decisions—such as hierarchy,
+              spacing, and content organization—can significantly influence clarity and usability.
+              While the production version reflects real-world collaboration and client priorities,
+              this alternative approach highlights how small refinements can shape the overall user experience.
+            </p>
+          </article>
         </section>
+
       </main>
 
       <Footer />
