@@ -107,15 +107,12 @@ export default function PRWorkforceUXPage() {
         <section className="portfolio-hero">
           <h1 className="portfolio-title">UX Exploration</h1>
 
-          <p className="portfolio-intro">
-            This UX exploration presents an alternative approach to the P&amp;R Workforce website.
-            It focuses on how thoughtful adjustments to layout, hierarchy, and spacing can improve
-            clarity and usability while working within the same content and business goals.
-          </p>
-
-          <p className="portfolio-subtle-note">
-            The client version reflects the final website developed in collaboration with the client.
-            This exploration presents an alternative UX direction.
+          <p className="portfolio-intro ux-intro">
+            This UX exploration presents an alternative approach to the P&amp;R Workforce website. 
+            It focuses on how thoughtful adjustments to layout, hierarchy, and spacing can improve 
+            clarity and usability while working within the same content and business goals. The 
+            client version reflects the final website developed in collaboration with the client, 
+            while this exploration presents an alternative UX direction.
           </p>
 
           <a href="/portfolio" className="portfolio-project-ux-button">

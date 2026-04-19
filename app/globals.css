@@ -2495,9 +2495,15 @@ a {
   margin-top: 16px;
 }
 
-/* =========================
-   UX COMPARISON IMAGE FIX
-========================= */
+/* ===============
+   UX COMPARISON 
+================== */
+
+.ux-intro {
+  color: var(--green); /* your forest green */
+  max-width: 720px;
+  margin: 0 auto;
+}
 
 .ux-comparison-section {
   margin-top: 24px;
