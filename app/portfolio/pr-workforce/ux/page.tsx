@@ -40,7 +40,6 @@ function ComparisonSection({
           </div>
 
           <div className="ux-comparison-grid">
-            {/* CLIENT VERSION */}
             <div className="ux-comparison-column">
               <p className="ux-comparison-label">Client Version</p>
 
@@ -48,17 +47,21 @@ function ComparisonSection({
                 type="button"
                 className="portfolio-project-image-button"
                 onClick={() => setSelectedImage(before)}
+                aria-label={`Open ${title} client version`}
               >
                 <div className="portfolio-project-image-wrap portfolio-hover-zoom ux-comparison-image-wrap">
-                  <img src={before} alt={beforeAlt} className="portfolio-project-image" />
-                  <div className="portfolio-image-overlay">
+                  <img
+                    src={before}
+                    alt={beforeAlt}
+                    className="portfolio-project-image"
+                  />
+                  <div className="portfolio-image-overlay" aria-hidden="true">
                     <FaSearchPlus className="portfolio-zoom-icon" />
                   </div>
                 </div>
               </button>
             </div>
 
-            {/* UX VERSION */}
             <div className="ux-comparison-column">
               <p className="ux-comparison-label">UX Exploration</p>
 
@@ -66,10 +69,15 @@ function ComparisonSection({
                 type="button"
                 className="portfolio-project-image-button"
                 onClick={() => setSelectedImage(after)}
+                aria-label={`Open ${title} UX exploration`}
               >
                 <div className="portfolio-project-image-wrap portfolio-hover-zoom ux-comparison-image-wrap">
-                  <img src={after} alt={afterAlt} className="portfolio-project-image" />
-                  <div className="portfolio-image-overlay">
+                  <img
+                    src={after}
+                    alt={afterAlt}
+                    className="portfolio-project-image"
+                  />
+                  <div className="portfolio-image-overlay" aria-hidden="true">
                     <FaSearchPlus className="portfolio-zoom-icon" />
                   </div>
                 </div>
@@ -92,20 +100,20 @@ export default function PRWorkforceUXPage() {
       <Header />
 
       <main className="portfolio-page">
-
-        {/* HERO */}
         <section className="portfolio-hero">
           <h1 className="portfolio-title">UX Exploration</h1>
 
           <p className="portfolio-intro">
-            This UX exploration presents an alternative approach to the P&amp;R Workforce website,
-            focusing on how thoughtful adjustments to layout, hierarchy, and spacing can enhance
-            clarity and usability—while working within the same content and business goals.
+            This UX exploration presents an alternative approach to the P&amp;R
+            Workforce website, focusing on how thoughtful adjustments to layout,
+            hierarchy, and spacing can improve clarity and usability while
+            working within the same content and business goals.
           </p>
 
           <p className="portfolio-subtle-note">
-            The client version reflects the final website developed in collaboration with the client,
-            while this exploration highlights an alternative UX direction.
+            The client version reflects the final website developed in
+            collaboration with the client, while this exploration presents an
+            alternative UX direction.
           </p>
 
           <a href="/portfolio" className="portfolio-project-ux-button">
@@ -113,11 +121,10 @@ export default function PRWorkforceUXPage() {
           </a>
         </section>
 
-        {/* PROJECT INTRO */}
         <section className="portfolio-grid-section">
           <article className="portfolio-project-card">
             <p className="portfolio-project-eyebrow">
-              Client Project · UX Exploration
+              Client Project • UX Exploration
             </p>
 
             <h2 className="portfolio-project-title">
@@ -125,20 +132,19 @@ export default function PRWorkforceUXPage() {
             </h2>
 
             <p className="portfolio-project-description">
-              This project was originally developed in collaboration with a client,
-              where the final version reflects their preferences and business decisions.
-              This exploration presents an alternative UX-driven approach, demonstrating
-              how small refinements in layout, hierarchy, and spacing can improve clarity
-              and usability while maintaining the same core content.
+              This project was originally developed in collaboration with a
+              client, where the final version reflects their preferences and
+              business decisions. This exploration presents an alternative
+              UX-driven approach that shows how thoughtful refinements to
+              layout, hierarchy, and spacing can improve clarity and usability
+              while maintaining the same core content.
             </p>
           </article>
         </section>
 
-        {/* SECTIONS */}
-
         <ComparisonSection
           title="Homepage"
-          description="This exploration focuses on improving how information is introduced and prioritized, allowing users to more quickly understand the company’s services while maintaining the same core messaging."
+          description="This exploration focuses on improving how information is introduced and prioritized, allowing users to more quickly understand the company’s services while keeping the same overall message."
           before="/images/homepage-pr.jpeg"
           after="/images/ux-homepage-pr.jpeg"
           beforeAlt="Homepage client version"
@@ -174,7 +180,7 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Industries Section"
-          description="The layout adjustments focus on improving readability and content grouping, helping users better process the information and navigate between sections."
+          description="The layout adjustments focus on improving readability and content grouping, helping users better process the information and move through the section more easily."
           before="/images/industries-pr.png"
           after="/images/ux-industries-pr.png"
           beforeAlt="Industries client version"
@@ -192,7 +198,7 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Contact Prompt"
-          description="This refinement emphasizes a clearer call to action, helping guide users toward the next step with stronger visual direction."
+          description="This refinement places more emphasis on the call to action, helping guide users toward the next step with clearer visual direction."
           before="/images/contact-prompt-pr.png"
           after="/images/ux-contact-prompt-pr.png"
           beforeAlt="Contact prompt client version"
@@ -201,27 +207,27 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Mobile Experience"
-          description="The mobile experience explores improved spacing, readability, and responsiveness, creating a more refined layout while preserving the same content and messaging."
+          description="The mobile experience explores improved spacing, readability, and responsiveness, creating a more refined experience while preserving the same content and message."
           before="/images/prwork2.jpeg"
           after="/images/mobile-pr.jpeg"
           beforeAlt="Mobile client version"
           afterAlt="Mobile UX exploration"
         />
 
-        {/* REFLECTION */}
         <section className="portfolio-grid-section">
           <article className="portfolio-project-card text-center">
             <h2 className="portfolio-project-title">Reflection</h2>
 
             <p className="portfolio-project-description">
-              This exploration demonstrates how iterative UX decisions—such as hierarchy,
-              spacing, and content organization—can significantly influence clarity and usability.
-              While the production version reflects real-world collaboration and client priorities,
-              this alternative approach highlights how small refinements can shape the overall user experience.
+              This exploration demonstrates how iterative UX decisions such as
+              hierarchy, spacing, and content organization can significantly
+              influence clarity and usability. While the client version reflects
+              real collaboration and client priorities, this alternative
+              approach shows how thoughtful refinements can shape the overall
+              user experience.
             </p>
           </article>
         </section>
-
       </main>
 
       <Footer />
