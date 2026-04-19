@@ -2342,6 +2342,7 @@ a {
   border: 1.5px solid rgba(255, 80, 80, 0.18);
   border-radius: 22px;
   box-shadow: 0 12px 30px rgba(46, 100, 23, 0.06);
+  margin-top: 12px;
 }
 
 .portfolio-project-image {
@@ -2376,15 +2377,7 @@ a {
 }
 
 .portfolio-image-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(17, 17, 17, 0.28);
-  opacity: 0;
-  transition: opacity 0.25s ease;
-  pointer-events: none;
+  display: none;
 }
 
 .portfolio-zoom-icon {
@@ -2584,16 +2577,14 @@ a {
   border: 1.5px solid rgba(255, 80, 80, 0.22);
   background: #fff;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
-  transition:
-    transform 0.22s ease,
-    box-shadow 0.22s ease,
-    border-color 0.22s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .ux-comparison-image-wrap:hover {
   overflow-y: auto;
   border-color: rgba(255, 80, 80, 0.38);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.07);
+  transform: scale(1.01);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .ux-comparison-image {
@@ -2618,6 +2609,15 @@ a {
 
 .ux-comparison-image-wrap::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.28);
+}
+
+.ux-comparison-image-wrap::after {
+  content: "🔍";
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  font-size: 14px;
+  opacity: 0.6;
 }
 
 @media (max-width: 900px) {
