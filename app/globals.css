@@ -2186,10 +2186,12 @@ a {
   max-width: 760px;
   margin: 0 auto 36px;
   text-align: center;
+  padding-top: 64px;   
+  padding-bottom: 48px;
 }
 
 .portfolio-title {
-  margin: 0;
+  margin-bottom: 18px;
   font-family: var(--font-borsok), serif;
   font-size: clamp(2.8rem, 5vw, 4.4rem);
   line-height: 1;
@@ -2503,6 +2505,7 @@ a {
   color: var(--green); /* your forest green */
   max-width: 720px;
   margin: 0 auto;
+  line-height: 1.7;
 }
 
 .ux-comparison-section {
