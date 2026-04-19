@@ -2499,63 +2499,131 @@ a {
    UX COMPARISON IMAGE FIX
 ========================= */
 
+.ux-comparison-section {
+  margin-top: 24px;
+}
+
+.ux-comparison-card {
+  padding: clamp(1.35rem, 2vw, 2rem);
+}
+
+.ux-comparison-header {
+  margin-bottom: 20px;
+}
+
+.ux-comparison-title {
+  font-size: clamp(1.45rem, 2vw, 1.9rem);
+  margin-bottom: 10px;
+}
+
+.ux-comparison-description {
+  max-width: 980px;
+}
+
 .ux-comparison-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 28px;
   align-items: start;
 }
 
-.ux-comparison-image-wrap {
-  max-height: 420px; 
-  overflow: hidden;
-  border-radius: 18px;
-  min-height: 200px;
+.ux-comparison-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
 }
 
-/* Make tall screenshots scrollable inside frame */
-.ux-comparison-image-wrap img {
+.ux-comparison-label {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+  opacity: 1;
+}
+
+.ux-comparison-label::after {
+  content: " (click to zoom)";
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+.ux-comparison-label-client {
+  color: #6d6d6d;
+}
+
+.ux-comparison-label-ux {
+  color: var(--coral);
+}
+
+.ux-comparison-image-button {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+  text-align: left;
+}
+
+.ux-comparison-image-wrap {
+  width: 100%;
+  min-height: 220px;
+  max-height: 420px;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1.5px solid rgba(255, 80, 80, 0.22);
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.ux-comparison-image-wrap:hover {
+  overflow-y: auto;
+  border-color: rgba(255, 80, 80, 0.38);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.07);
+}
+
+.ux-comparison-image {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Optional: subtle scroll effect on hover */
-.ux-comparison-image-wrap:hover {
-  overflow-y: auto;
+.ux-comparison-image-wrap::-webkit-scrollbar {
+  width: 10px;
 }
 
-.ux-comparison-label::after {
-  content: " (click to zoom)";
-  font-size: 0.75rem;
-  color: #999;
+.ux-comparison-image-wrap::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 999px;
 }
 
-.ux-comparison-section {
-  margin-top: 22px;
+.ux-comparison-image-wrap::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 999px;
 }
 
-.ux-comparison-label {
-  opacity: 0.9;
+.ux-comparison-image-wrap::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.28);
 }
 
-.ux-comparison-title {
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
-}
-
-.ux-comparison-column:first-child .ux-comparison-label {
-  color: #666; /* softer */
-  opacity: 0.8;
-}
-
-.ux-comparison-column:last-child .ux-comparison-label {
-  color: var(--coral); /* emphasis */
-}
-
-/* Mobile fallback */
 @media (max-width: 900px) {
   .ux-comparison-grid {
     grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .ux-comparison-image-wrap {
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .ux-comparison-image-wrap:hover {
+    overflow: hidden;
   }
 }
 
