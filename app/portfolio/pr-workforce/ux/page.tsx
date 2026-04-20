@@ -8,7 +8,9 @@ import { FaSearchPlus } from "react-icons/fa";
 
 type ComparisonSectionProps = {
   title: string;
-  description: string;
+ takeaway: string;
+  clientPoints: string[];
+  explorationPoints: string[];
   before: string;
   after: string;
   beforeAlt: string;
@@ -17,7 +19,9 @@ type ComparisonSectionProps = {
 
 function ComparisonSection({
   title,
-  description,
+  takeaway,
+  clientPoints,
+  explorationPoints,
   before,
   after,
   beforeAlt,
@@ -34,17 +38,40 @@ function ComparisonSection({
               {title}
             </h2>
 
-            <p className="portfolio-project-description ux-comparison-description">
-              {description}
+            <p className="portfolio-project-description ux-comparison-takeaway">
+              {takeaway}
             </p>
+          </div>
+
+          <div className="ux-comparison-notes-grid">
+            <div className="ux-comparison-notes-card">
+              <p className="ux-comparison-label ux-comparison-label-client">
+                Client Version
+              </p>
+
+              <ul className="ux-comparison-points">
+                {clientPoints.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="ux-comparison-notes-card ux-comparison-notes-card-improved">
+              <p className="ux-comparison-label ux-comparison-label-ux">
+                UX + SEO Exploration
+              </p>
+
+              <ul className="ux-comparison-points">
+                {explorationPoints.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="ux-comparison-grid">
             <div className="ux-comparison-column">
               <div className="ux-comparison-meta">
-                <p className="ux-comparison-label ux-comparison-label-client">
-                  Client Version
-                </p>
                 <p className="ux-comparison-subtitle">
                   Final site developed with the client
                 </p>
@@ -71,9 +98,6 @@ function ComparisonSection({
 
             <div className="ux-comparison-column">
               <div className="ux-comparison-meta">
-                <p className="ux-comparison-label ux-comparison-label-ux">
-                  UX + SEO Exploration
-                </p>
                 <p className="ux-comparison-subtitle ux-comparison-subtitle-improved">
                   Improved hierarchy, structure, and discoverability
                 </p>
@@ -86,6 +110,7 @@ function ComparisonSection({
                 aria-label={`Open ${title} UX and SEO exploration`}
               >
                 <div className="portfolio-project-image-wrap portfolio-hover-zoom ux-comparison-image-wrap ux-comparison-image-wrap-improved">
+                  <div className="ux-comparison-improved-badge">Improved</div>
                   <img
                     src={after}
                     alt={afterAlt}
@@ -160,7 +185,17 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Homepage"
-          description="In the client version, multiple messages compete for attention early, which makes it harder to quickly understand the company’s core value. The UX + SEO exploration simplifies the hierarchy and gives the main staffing message more priority. It also structures content more clearly so users can scan faster while search engines get a stronger understanding of the page’s focus."
+          takeaway="Improves clarity, hierarchy, and SEO targeting from the first screen."
+          clientPoints={[
+            "Multiple messages compete for attention early",
+            "Core value takes longer to understand",
+            "Weaker page focus for search visibility",
+          ]}
+          explorationPoints={[
+            "Stronger hierarchy puts the main message first",
+            "Faster scanning and clearer service understanding",
+            "More focused structure supports SEO relevance",
+          ]}
           before="/images/homepage-pr.jpeg"
           after="/images/ux-homepage-pr.jpeg"
           beforeAlt="Homepage client version"
@@ -169,7 +204,17 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Hero Section"
-          description="The client version introduces the business with less emphasis on the primary message and next step. The UX + SEO exploration strengthens the headline, improves supporting copy, and gives the call to action more prominence. This helps users understand the offer immediately while aligning the section more clearly with relevant search terms."
+          takeaway="Makes the offer clearer and the next step easier to identify."
+          clientPoints={[
+            "Primary message has less visual emphasis",
+            "Call to action blends in more with surrounding content",
+            "Search terms are less strongly reinforced",
+          ]}
+          explorationPoints={[
+            "Headline and supporting copy are more intentional",
+            "Call to action has stronger visibility",
+            "Content aligns more clearly with search intent",
+          ]}
           before="/images/hero-pr.png"
           after="/images/ux-hero-pr.png"
           beforeAlt="Hero client version"
@@ -178,7 +223,17 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Navigation"
-          description="The client version provides the needed links, but the structure is less supportive of fast scanning and page discovery. The UX + SEO exploration organizes navigation more clearly, making it easier for users to move through the site. It also improves internal linking and crawlability."
+          takeaway="Creates a cleaner path for both users and search engines."
+          clientPoints={[
+            "Navigation works, but is less structured for fast scanning",
+            "Page discovery feels less intentional",
+            "Internal linking is less supportive of crawlability",
+          ]}
+          explorationPoints={[
+            "Navigation is easier to scan and understand",
+            "Users can move through the site more confidently",
+            "Internal linking becomes clearer and more effective",
+          ]}
           before="/images/navigation-pr.png"
           after="/images/ux-navigation-pr.png"
           beforeAlt="Navigation client version"
@@ -187,7 +242,17 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Services Section"
-          description="In the client version, services are presented in a denser layout, which makes scanning more effortful. The UX + SEO exploration increases spacing, clarifies grouping, and improves content hierarchy. That makes the offerings easier to understand and supports stronger service-related keyword targeting."
+          takeaway="Makes offerings easier to scan and strengthens service-related keyword clarity."
+          clientPoints={[
+            "Denser layout makes services harder to scan",
+            "Grouping feels less intentional",
+            "Service hierarchy is weaker",
+          ]}
+          explorationPoints={[
+            "More spacing improves readability",
+            "Service grouping is clearer and more organized",
+            "Stronger hierarchy supports both UX and SEO",
+          ]}
           before="/images/services-pr.png"
           after="/images/ux-services-pr.png"
           beforeAlt="Services client version"
@@ -196,7 +261,17 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Industries Section"
-          description="The client version includes helpful content, but the section is less structured for quick comprehension. The UX + SEO exploration improves grouping, spacing, and readability so users can process the information more easily. It also makes the content clearer and more interpretable for search engines."
+          takeaway="Improves readability and helps the content communicate more clearly."
+          clientPoints={[
+            "Useful content is present, but harder to process quickly",
+            "Grouping is less refined",
+            "Section structure is less readable at a glance",
+          ]}
+          explorationPoints={[
+            "Improved spacing supports easier scanning",
+            "Content grouping is more digestible",
+            "Clearer structure benefits users and search engines",
+          ]}
           before="/images/industries-pr.png"
           after="/images/ux-industries-pr.png"
           beforeAlt="Industries client version"
@@ -205,7 +280,17 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Contact Section"
-          description="The client version includes the necessary contact elements, but the visual flow is less intentional. The UX + SEO exploration restructures the section with a clearer form hierarchy, better content grouping, and a more guided path to action. This creates a smoother conversion experience while keeping important information easy to access."
+          takeaway="Creates a smoother conversion path with clearer form hierarchy."
+          clientPoints={[
+            "Necessary contact elements are present",
+            "Visual flow is less guided",
+            "Conversion path feels less intentional",
+          ]}
+          explorationPoints={[
+            "Form hierarchy is easier to follow",
+            "Content grouping improves usability",
+            "Users are guided more naturally toward action",
+          ]}
           before="/images/contact-pr.jpeg"
           after="/images/ux-contact-pr.jpeg"
           beforeAlt="Contact client version"
@@ -214,7 +299,17 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Contact Prompt"
-          description="In the client version, the call to action is present but less visually dominant. The UX + SEO exploration gives the contact prompt stronger contrast, clearer hierarchy, and more direct emphasis. That helps guide users more confidently toward the next step."
+          takeaway="Adds stronger emphasis to the conversion moment."
+          clientPoints={[
+            "Call to action is present but less visually dominant",
+            "Next step competes more with surrounding content",
+            "Prompt feels less focused",
+          ]}
+          explorationPoints={[
+            "Stronger contrast improves visibility",
+            "Hierarchy makes the next step more obvious",
+            "Users are guided more confidently toward contact",
+          ]}
           before="/images/contact-prompt-pr.png"
           after="/images/ux-contact-prompt-pr.png"
           beforeAlt="Contact prompt client version"
@@ -223,7 +318,17 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Mobile Experience"
-          description="The client version works on mobile, but content feels tighter and less refined in places. The UX + SEO exploration improves spacing, readability, section rhythm, and tap target clarity. That makes the mobile experience feel more comfortable and polished while preserving the same content and business message."
+          takeaway="Creates a more readable, comfortable, and polished mobile experience."
+          clientPoints={[
+            "Mobile version works, but content feels tighter in places",
+            "Section rhythm is less refined",
+            "Readability and tap flow are less polished",
+          ]}
+          explorationPoints={[
+            "Improved spacing makes content easier to absorb",
+            "Readability and vertical rhythm are stronger",
+            "Touch targets and scanning feel more comfortable",
+          ]}
           before="/images/prwork2.jpeg"
           after="/images/mobile-pr.jpeg"
           beforeAlt="Mobile client version"
@@ -240,6 +345,16 @@ export default function PRWorkforceUXPage() {
               improve how users understand a website and how search engines
               interpret it.
             </p>
+
+            <div className="ux-reflection-outcomes">
+              <div className="ux-reflection-outcome">Clearer user journey</div>
+              <div className="ux-reflection-outcome">
+                Stronger content structure for SEO
+              </div>
+              <div className="ux-reflection-outcome">
+                Higher conversion potential
+              </div>
+            </div>
 
             <p className="portfolio-project-description">
               While the client version reflects real collaboration and client
