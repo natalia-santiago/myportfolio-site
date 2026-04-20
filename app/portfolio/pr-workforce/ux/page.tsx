@@ -36,9 +36,7 @@ function ComparisonSection({
               {title}
             </h2>
 
-            <p className="ux-comparison-takeaway text-[1rem] font-semibold text-black/85">
-              {takeaway}
-            </p>
+            <p className="ux-comparison-takeaway">{takeaway}</p>
 
             <p className="portfolio-project-description ux-comparison-description">
               {description}
@@ -47,11 +45,11 @@ function ComparisonSection({
 
           <div className="ux-comparison-grid">
             <div className="ux-comparison-column">
-              <p className="ux-comparison-label ux-comparison-label-client text-black/65">
+              <p className="ux-comparison-label ux-comparison-label-client">
                 Client Version
               </p>
 
-              <p className="ux-comparison-subtitle text-black/50">
+              <p className="ux-comparison-subtitle">
                 Final site developed with the client
               </p>
 
@@ -75,11 +73,11 @@ function ComparisonSection({
             </div>
 
             <div className="ux-comparison-column">
-              <p className="ux-comparison-label ux-comparison-label-ux text-[#2e6417]">
+              <p className="ux-comparison-label ux-comparison-label-ux">
                 UX + SEO Exploration
               </p>
 
-              <p className="ux-comparison-subtitle ux-comparison-subtitle-improved text-[#2e6417]/75">
+              <p className="ux-comparison-subtitle ux-comparison-subtitle-improved">
                 Improved hierarchy, structure, and discoverability
               </p>
 
@@ -89,7 +87,9 @@ function ComparisonSection({
                 onClick={() => setSelectedImage(after)}
                 aria-label={`Open ${title} UX and SEO exploration`}
               >
-                <div className="portfolio-project-image-wrap portfolio-hover-zoom ux-comparison-image-wrap ux-comparison-image-wrap-improved ring-1 ring-[#2e6417]/12">
+                <div className="portfolio-project-image-wrap portfolio-hover-zoom ux-comparison-image-wrap ux-comparison-image-wrap-improved">
+                  <span className="ux-improved-badge">Improved</span>
+
                   <img
                     src={after}
                     alt={afterAlt}
@@ -165,7 +165,7 @@ export default function PRWorkforceUXPage() {
         <ComparisonSection
           title="Homepage"
           takeaway="Improves clarity, hierarchy, and SEO targeting from the first screen."
-          description="In the client version, multiple messages compete for attention early, which makes it harder to quickly understand the company’s core value. The UX and SEO exploration simplifies the hierarchy, gives the main staffing message more priority, and structures content more clearly so users can scan faster while search engines get a stronger understanding of the page’s focus."
+          description="In the client version, multiple messages compete for attention early, making the core value slower to understand. The UX and SEO exploration simplifies the hierarchy, prioritizes the main staffing message, and structures content more clearly so users can scan faster while search engines understand the page focus more easily."
           before="/images/homepage-pr.jpeg"
           after="/images/ux-homepage-pr.jpeg"
           beforeAlt="Homepage client version"
@@ -175,7 +175,7 @@ export default function PRWorkforceUXPage() {
         <ComparisonSection
           title="Hero Section"
           takeaway="Makes the offer clearer and the next step easier to identify."
-          description="The client version introduces the business with less emphasis on the primary message and next step. The UX and SEO exploration strengthens the headline, improves supporting copy, and gives the call to action more prominence, helping users understand the offer immediately while aligning the section more clearly with relevant search terms."
+          description="The client version introduces the business with less emphasis on the primary message and next step. The UX and SEO exploration strengthens the headline, improves supporting copy, and gives the call to action more prominence so users understand the offer immediately while the section aligns more clearly with relevant search terms."
           before="/images/hero-pr.png"
           after="/images/ux-hero-pr.png"
           beforeAlt="Hero client version"
@@ -242,15 +242,14 @@ export default function PRWorkforceUXPage() {
           afterAlt="Mobile UX and SEO exploration"
         />
 
-        <section className="portfolio-grid-section">
-          <article className="portfolio-project-card text-center pt-8">
+        <section className="portfolio-grid-section ux-reflection-section">
+          <article className="portfolio-project-card text-center">
             <h2 className="portfolio-project-title">Reflection</h2>
 
             <p className="portfolio-project-description">
               This exploration shows how small changes in hierarchy, structure,
-              internal linking, and content organization can significantly
-              improve how users understand a website and how search engines
-              interpret it.
+              and content organization can significantly improve both user
+              understanding and search visibility.
             </p>
 
             <div className="ux-reflection-outcomes">
