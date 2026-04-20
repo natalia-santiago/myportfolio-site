@@ -36,7 +36,9 @@ function ComparisonSection({
               {title}
             </h2>
 
-            <p className="ux-comparison-takeaway">{takeaway}</p>
+            <p className="ux-comparison-takeaway text-[1rem] font-semibold text-black/85">
+              {takeaway}
+            </p>
 
             <p className="portfolio-project-description ux-comparison-description">
               {description}
@@ -45,11 +47,11 @@ function ComparisonSection({
 
           <div className="ux-comparison-grid">
             <div className="ux-comparison-column">
-              <p className="ux-comparison-label ux-comparison-label-client">
+              <p className="ux-comparison-label ux-comparison-label-client text-black/65">
                 Client Version
               </p>
 
-              <p className="ux-comparison-subtitle">
+              <p className="ux-comparison-subtitle text-black/50">
                 Final site developed with the client
               </p>
 
@@ -73,11 +75,11 @@ function ComparisonSection({
             </div>
 
             <div className="ux-comparison-column">
-              <p className="ux-comparison-label ux-comparison-label-ux">
+              <p className="ux-comparison-label ux-comparison-label-ux text-[#2e6417]">
                 UX + SEO Exploration
               </p>
 
-              <p className="ux-comparison-subtitle ux-comparison-subtitle-improved">
+              <p className="ux-comparison-subtitle ux-comparison-subtitle-improved text-[#2e6417]/75">
                 Improved hierarchy, structure, and discoverability
               </p>
 
@@ -87,7 +89,7 @@ function ComparisonSection({
                 onClick={() => setSelectedImage(after)}
                 aria-label={`Open ${title} UX and SEO exploration`}
               >
-                <div className="portfolio-project-image-wrap portfolio-hover-zoom ux-comparison-image-wrap ux-comparison-image-wrap-improved">
+                <div className="portfolio-project-image-wrap portfolio-hover-zoom ux-comparison-image-wrap ux-comparison-image-wrap-improved ring-1 ring-[#2e6417]/12">
                   <img
                     src={after}
                     alt={afterAlt}
@@ -241,7 +243,7 @@ export default function PRWorkforceUXPage() {
         />
 
         <section className="portfolio-grid-section">
-          <article className="portfolio-project-card text-center">
+          <article className="portfolio-project-card text-center pt-8">
             <h2 className="portfolio-project-title">Reflection</h2>
 
             <p className="portfolio-project-description">
@@ -264,8 +266,8 @@ export default function PRWorkforceUXPage() {
             <p className="portfolio-project-description">
               While the client version reflects real collaboration and client
               priorities, this alternative approach shows how thoughtful UX and
-              SEO refinements can create a clearer user journey, support
-              stronger discoverability, and improve the overall experience.
+              SEO refinements can create a clearer user journey, stronger search
+              visibility, and a more effective website overall.
             </p>
           </article>
         </section>
