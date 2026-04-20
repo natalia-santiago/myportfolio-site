@@ -160,7 +160,7 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Homepage"
-          description="In the client version, multiple messages compete for attention early, which makes it harder to quickly understand the company’s core value. The UX + SEO exploration simplifies the hierarchy, gives the main staffing message more priority, and structures content more clearly so users can scan faster while search engines get a stronger understanding of the page’s focus."
+          description="In the client version, multiple messages compete for attention early, which makes it harder to quickly understand the company’s core value. The UX + SEO exploration simplifies the hierarchy and gives the main staffing message more priority. It also structures content more clearly so users can scan faster while search engines get a stronger understanding of the page’s focus."
           before="/images/homepage-pr.jpeg"
           after="/images/ux-homepage-pr.jpeg"
           beforeAlt="Homepage client version"
@@ -169,7 +169,7 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Hero Section"
-          description="The client version introduces the business with less emphasis on the primary message and next step. The UX + SEO exploration strengthens the headline, improves supporting copy, and gives the call to action more prominence, helping users understand the offer immediately while aligning the section more clearly with relevant search terms."
+          description="The client version introduces the business with less emphasis on the primary message and next step. The UX + SEO exploration strengthens the headline, improves supporting copy, and gives the call to action more prominence. This helps users understand the offer immediately while aligning the section more clearly with relevant search terms."
           before="/images/hero-pr.png"
           after="/images/ux-hero-pr.png"
           beforeAlt="Hero client version"
@@ -178,7 +178,7 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Navigation"
-          description="The client version provides the needed links, but the structure is less supportive of fast scanning and page discovery. The UX + SEO exploration organizes navigation more clearly, making it easier for users to move through the site while also improving internal linking and crawlability."
+          description="The client version provides the needed links, but the structure is less supportive of fast scanning and page discovery. The UX + SEO exploration organizes navigation more clearly, making it easier for users to move through the site. It also improves internal linking and crawlability."
           before="/images/navigation-pr.png"
           after="/images/ux-navigation-pr.png"
           beforeAlt="Navigation client version"
@@ -187,7 +187,7 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Services Section"
-          description="In the client version, services are presented in a denser layout, which makes scanning more effortful. The UX + SEO exploration increases spacing, clarifies grouping, and improves content hierarchy so users can understand the offerings more easily while the page supports stronger service-related keyword targeting."
+          description="In the client version, services are presented in a denser layout, which makes scanning more effortful. The UX + SEO exploration increases spacing, clarifies grouping, and improves content hierarchy. That makes the offerings easier to understand and supports stronger service-related keyword targeting."
           before="/images/services-pr.png"
           after="/images/ux-services-pr.png"
           beforeAlt="Services client version"
@@ -196,7 +196,7 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Industries Section"
-          description="The client version includes helpful content, but the section is less structured for quick comprehension. The UX + SEO exploration improves grouping, spacing, and readability so users can process the information more easily while the content becomes clearer and more interpretable for search engines."
+          description="The client version includes helpful content, but the section is less structured for quick comprehension. The UX + SEO exploration improves grouping, spacing, and readability so users can process the information more easily. It also makes the content clearer and more interpretable for search engines."
           before="/images/industries-pr.png"
           after="/images/ux-industries-pr.png"
           beforeAlt="Industries client version"
@@ -205,7 +205,7 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Contact Section"
-          description="The client version includes the necessary contact elements, but the visual flow is less intentional. The UX + SEO exploration restructures the section with a clearer form hierarchy, better content grouping, and a more guided path to action, creating a smoother conversion experience while keeping important information easy to access."
+          description="The client version includes the necessary contact elements, but the visual flow is less intentional. The UX + SEO exploration restructures the section with a clearer form hierarchy, better content grouping, and a more guided path to action. This creates a smoother conversion experience while keeping important information easy to access."
           before="/images/contact-pr.jpeg"
           after="/images/ux-contact-pr.jpeg"
           beforeAlt="Contact client version"
@@ -214,7 +214,7 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Contact Prompt"
-          description="In the client version, the call to action is present but less visually dominant. The UX + SEO exploration gives the contact prompt stronger contrast, clearer hierarchy, and more direct emphasis so users are guided more confidently toward the next step."
+          description="In the client version, the call to action is present but less visually dominant. The UX + SEO exploration gives the contact prompt stronger contrast, clearer hierarchy, and more direct emphasis. That helps guide users more confidently toward the next step."
           before="/images/contact-prompt-pr.png"
           after="/images/ux-contact-prompt-pr.png"
           beforeAlt="Contact prompt client version"
@@ -223,7 +223,7 @@ export default function PRWorkforceUXPage() {
 
         <ComparisonSection
           title="Mobile Experience"
-          description="The client version works on mobile, but content feels tighter and less refined in places. The UX + SEO exploration improves spacing, readability, section rhythm, and tap target clarity so the mobile experience feels more comfortable and polished while preserving the same content and business message."
+          description="The client version works on mobile, but content feels tighter and less refined in places. The UX + SEO exploration improves spacing, readability, section rhythm, and tap target clarity. That makes the mobile experience feel more comfortable and polished while preserving the same content and business message."
           before="/images/prwork2.jpeg"
           after="/images/mobile-pr.jpeg"
           beforeAlt="Mobile client version"
@@ -235,14 +235,15 @@ export default function PRWorkforceUXPage() {
             <h2 className="portfolio-project-title">Reflection</h2>
 
             <p className="portfolio-project-description">
-              This exploration demonstrates how UX and SEO decisions such as
-              hierarchy, structure, internal linking, and content organization
-              can influence both usability and visibility.
+              This exploration shows how small changes in hierarchy, structure,
+              internal linking, and content organization can significantly
+              improve how users understand a website and how search engines
+              interpret it.
             </p>
 
             <p className="portfolio-project-description">
               While the client version reflects real collaboration and client
-              priorities, this alternative approach shows how targeted UX and
+              priorities, this alternative approach shows how thoughtful UX and
               SEO refinements can create a clearer user journey, support
               stronger discoverability, and improve the overall experience.
             </p>
