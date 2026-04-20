@@ -104,7 +104,7 @@ export default function PortfolioPage() {
                     href="/portfolio/pr-workforce/ux"
                     className="portfolio-project-ux-button"
                   >
-                    UX Exploration
+                    UX & SEO Exploration
                   </a>
                 </div>
 
