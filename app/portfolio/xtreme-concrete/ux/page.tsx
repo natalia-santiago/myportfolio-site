@@ -4,7 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Lightbox from "@/components/Lightbox";
-import { FaSearchPlus } from "react-icons/fa";
+import { FaSearchPlus, FaGlobe, FaGithub } from "react-icons/fa";
 
 type ComparisonSectionProps = {
   title: string;
@@ -122,18 +122,20 @@ export default function XtremeConcreteUXPage() {
           <h1 className="portfolio-title">UX &amp; SEO Exploration</h1>
 
           <p className="portfolio-intro ux-intro">
-            This UX and SEO exploration presents an alternative approach to the
-            Xtreme Concrete Cutting &amp; Demolition website, showing how
-            stronger layout decisions, clearer hierarchy, and more intentional
-            content structure can improve usability, trust, and local search
-            visibility while supporting the same business goals.
+            This case study presents a redesigned UX and SEO exploration for
+            Xtreme Concrete Cutting &amp; Demolition, created as an alternative
+            direction to the final client version. The goal was to explore how a
+            more structured homepage, clearer service messaging, and stronger
+            local SEO signals could improve how the business is understood by
+            both visitors and search engines.
           </p>
 
           <p className="portfolio-intro ux-intro">
-            The client version reflects the final website developed in
-            collaboration with the client, while this exploration shows how
-            targeted UX and SEO refinements can create a clearer, more effective
-            experience without changing the company&apos;s core services.
+            Rather than changing the company itself, this exploration focuses on
+            improving how the company is presented online. It highlights ways to
+            make trust building faster, navigation more intuitive, conversion
+            paths more direct, and service pages more supportive of local search
+            visibility while still respecting the same core business offering.
           </p>
 
           <a href="/portfolio" className="portfolio-project-ux-button">
@@ -148,19 +150,41 @@ export default function XtremeConcreteUXPage() {
             </p>
 
             <h2 className="portfolio-project-title">
-              Xtreme Concrete Cutting &amp; Demolition 
+              Xtreme Concrete Cutting &amp; Demolition
             </h2>
 
             <p className="portfolio-project-description">
-              This project was originally developed in collaboration with a
-              client, where the final version reflects their preferences and
-              business decisions. This exploration presents an alternative UX
-              and SEO driven approach that shows how refinements to layout,
-              hierarchy, service presentation, internal linking, and local
-              content structure can improve clarity, usability, and search
-              visibility while maintaining the same concrete cutting and
-              demolition service offering.
+              This UX and SEO exploration reimagines the Xtreme Concrete Cutting
+              &amp; Demolition website through a more strategy driven lens. The
+              focus was on improving content hierarchy, strengthening the
+              homepage message, presenting services more clearly, and creating a
+              smoother path from first impression to contact. It also explores
+              how better structured sections, stronger internal linking, and
+              more intentional local SEO content can make a service business
+              website feel more polished, credible, and easier to find.
             </p>
+
+            <div className="portfolio-project-links">
+              <a
+                href="https://natalia-santiago-portfolio.netlify.app/portfolio/xtreme-concrete/ux"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="portfolio-project-icon-link"
+                aria-label="View Xtreme UX and SEO exploration live website"
+              >
+                <FaGlobe />
+              </a>
+
+              <a
+                href="https://github.com/natalia-santiago/xtreme-ux"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="portfolio-project-icon-link"
+                aria-label="View Xtreme UX and SEO exploration GitHub repository"
+              >
+                <FaGithub />
+              </a>
+            </div>
           </article>
         </section>
 

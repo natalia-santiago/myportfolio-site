@@ -4,7 +4,8 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Lightbox from "@/components/Lightbox";
-import { FaSearchPlus } from "react-icons/fa";
+import { FaSearchPlus, FaGlobe, FaGithub } from "react-icons/fa";
+
 
 type ComparisonSectionProps = {
   title: string;
@@ -159,6 +160,28 @@ export default function PRWorkforceUXPage() {
               clarity, usability, and search visibility while maintaining the
               same service offering.
             </p>
+
+            <div className="portfolio-project-links">
+              <a
+                href="https://natalia-santiago-portfolio.netlify.app/portfolio/xtreme-concrete/ux"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="portfolio-project-icon-link"
+                aria-label="View Xtreme UX and SEO exploration live website"
+              >
+                <FaGlobe />
+              </a>
+
+              <a
+                href="https://github.com/natalia-santiago/xtreme-ux"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="portfolio-project-icon-link"
+                aria-label="View Xtreme UX and SEO exploration GitHub repository"
+              >
+                <FaGithub />
+              </a>
+            </div>            
           </article>
         </section>
 
