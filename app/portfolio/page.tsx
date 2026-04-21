@@ -34,7 +34,144 @@ export default function PortfolioPage() {
                   </p>
 
                   <h2 className="portfolio-project-title">
-                    Xtreme Concrete Cutting &amp; Demolition 
+                    Little Hands Mobile Soft Play
+                  </h2>
+
+                  <p className="portfolio-project-description">
+                    A soft play rental website designed and developed to present
+                    services clearly, support mobile browsing, and help convert
+                    visitors into inquiries for events and bookings.
+                  </p>
+
+                  <ul className="portfolio-project-features">
+                    <li>
+                      Designed and developed a custom website tailored to the
+                      client’s brand and goals.
+                    </li>
+                    <li>
+                      Built a responsive experience with strong mobile usability
+                      and clear service presentation.
+                    </li>
+                    <li>
+                      Created custom layouts and front-end components to support
+                      a polished user experience.
+                    </li>
+                    <li>
+                      Integrated contact functionality, foundational SEO, and
+                      performance-focused improvements.
+                    </li>
+                    <li>
+                      Collaborated directly with the client through implementation
+                      and deployment.
+                    </li>
+                  </ul>
+
+                  <div className="portfolio-project-tags">
+                    <span className="portfolio-project-tag">
+                      Responsive Web Design
+                    </span>
+                    <span className="portfolio-project-tag">
+                      Front-End Development
+                    </span>
+                    <span className="portfolio-project-tag">UI/UX Design</span>
+                    <span className="portfolio-project-tag">
+                      Search Engine Optimization
+                    </span>
+                    <span className="portfolio-project-tag">
+                      Client Collaboration
+                    </span>
+                    <span className="portfolio-project-tag">React</span>
+                  </div>
+
+                  <div className="portfolio-project-links">
+                    <a
+                      href="https://littlehands-mobilesoftplay.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-circle"
+                      aria-label="Live website"
+                    >
+                      <FaGlobe />
+                    </a>
+
+                    <a
+                      href="https://github.com/natalia-santiago/littlehands.mobilesoftplay"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-circle"
+                      aria-label="GitHub repository"
+                    >
+                      <FaGithub />
+                    </a>
+                  </div>
+
+                  <a
+                    href="/portfolio/little-hands/ux"
+                    className="portfolio-project-ux-button"
+                  >
+                    UX & SEO Exploration
+                  </a>
+                </div>
+
+                <div className="portfolio-project-media">
+                  <button
+                    type="button"
+                    className="portfolio-project-image-button"
+                    onClick={() =>
+                      setSelectedImage("/images/littlehands-portfolio1.png")
+                    }
+                    aria-label="Open Little Hands Mobile Soft Play preview image 1"
+                  >
+                    <div className="portfolio-project-image-wrap portfolio-hover-zoom">
+                      <img
+                        src="/images/littlehands-portfolio1.png"
+                        alt="Little Hands Mobile Soft Play website preview showing the live website design and branding."
+                        className="portfolio-project-image"
+                      />
+                      <div
+                        className="portfolio-image-overlay"
+                        aria-hidden="true"
+                      >
+                        <FaSearchPlus className="portfolio-zoom-icon" />
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    className="portfolio-project-image-button"
+                    onClick={() =>
+                      setSelectedImage("/images/littlehands-portfolio2.png")
+                    }
+                    aria-label="Open Little Hands Mobile Soft Play preview image 2"
+                  >
+                    <div className="portfolio-project-image-wrap portfolio-hover-zoom">
+                      <img
+                        src="/images/littlehands-portfolio2.png"
+                        alt="Little Hands Mobile Soft Play website preview showing a second responsive view of the client website."
+                        className="portfolio-project-image"
+                      />
+                      <div
+                        className="portfolio-image-overlay"
+                        aria-hidden="true"
+                      >
+                        <FaSearchPlus className="portfolio-zoom-icon" />
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article className="portfolio-project-card">
+              <div className="portfolio-project-content">
+                <div className="portfolio-project-copy">
+                  <p className="portfolio-project-eyebrow">
+                    March 2026 · Client Website
+                  </p>
+
+                  <h2 className="portfolio-project-title">
+                    Xtreme Concrete Cutting &amp; Demolition
                   </h2>
 
                   <p className="portfolio-project-description">
@@ -46,8 +183,8 @@ export default function PortfolioPage() {
 
                   <ul className="portfolio-project-features">
                     <li>
-                      Developed a production-ready website tailored
-                      to the construction industry.
+                      Developed a production-ready website tailored to the
+                      construction industry.
                     </li>
                     <li>
                       Built a responsive, mobile-first application using Next.js
