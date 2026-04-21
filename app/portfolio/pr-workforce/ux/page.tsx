@@ -163,7 +163,7 @@ export default function PRWorkforceUXPage() {
 
             <div className="portfolio-project-links">
               <a
-                href="https://natalia-santiago-portfolio.netlify.app/portfolio/xtreme-concrete/ux"
+                href="https://prworkforce-ux-concept.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="portfolio-project-icon-link"
@@ -173,7 +173,7 @@ export default function PRWorkforceUXPage() {
               </a>
 
               <a
-                href="https://github.com/natalia-santiago/xtreme-ux"
+                href="https://github.com/natalia-santiago/prworkforce-ux"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="portfolio-project-icon-link"

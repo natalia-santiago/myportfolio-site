@@ -166,7 +166,7 @@ export default function XtremeConcreteUXPage() {
 
             <div className="portfolio-project-links">
               <a
-                href="https://natalia-santiago-portfolio.netlify.app/portfolio/xtreme-concrete/ux"
+                href="https://xtreme-ux-concept.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="portfolio-project-icon-link"

@@ -2494,139 +2494,22 @@ a {
   margin-top: 16px;
 }
 
-/* ===============
-   UX COMPARISON 
-================== */
-
-.ux-intro {
-  color: var(--green); /* your forest green */
-  max-width: 720px;
-  margin: 0 auto;
-  line-height: 1.7;
-}
-
-.ux-comparison-section {
-  margin-top: 24px;
-}
-
-.ux-comparison-card {
-  padding: clamp(1.35rem, 2vw, 2rem);
-}
-
-.ux-comparison-header {
-  margin-bottom: 20px;
-}
-
-.ux-comparison-title {
-  font-size: clamp(1.45rem, 2vw, 1.9rem);
-  margin-bottom: 10px;
-}
-
-.ux-comparison-description {
-  max-width: 980px;
-}
-
-.ux-comparison-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  align-items: start;
-}
-
-.ux-comparison-column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  min-width: 0;
-}
-
-.ux-comparison-label {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 600;
-  line-height: 1.35;
-  opacity: 1;
-}
-
-.ux-comparison-label::after {
-  content: " (click to zoom)";
-  font-size: 0.82rem;
-  font-weight: 400;
-  color: #8c8c8c;
-}
-
-.ux-comparison-label-client {
-  color: #6d6d6d;
-}
-
-.ux-comparison-label-ux {
-  color: var(--coral);
-}
-
-.ux-comparison-image-button {
-  width: 100%;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  cursor: zoom-in;
-  text-align: left;
-}
-
-.ux-comparison-image-wrap {
-  width: 100%;
-  min-height: 220px;
-  max-height: 420px;
-  overflow: hidden;
-  border-radius: 18px;
-  border: 1.5px solid rgba(255, 80, 80, 0.22);
-  background: #fff;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.ux-comparison-image-wrap:hover {
-  overflow-y: auto;
-  border-color: rgba(255, 80, 80, 0.38);
-  transform: scale(1.01);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-}
-
-.ux-comparison-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.ux-comparison-image-wrap::-webkit-scrollbar {
-  width: 10px;
-}
-
-.ux-comparison-image-wrap::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 999px;
-}
-
-.ux-comparison-image-wrap::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.18);
-  border-radius: 999px;
-}
-
-.ux-comparison-image-wrap::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.28);
-}
-
-.ux-comparison-image-wrap::after {
-  content: "🔍";
-  position: absolute;
-  bottom: 10px;
-  right: 12px;
-  font-size: 14px;
-  opacity: 0.6;
-}
-
 /* =========================
    UX + SEO EXPLORATION PAGE
 ========================= */
+
+.ux-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  color: rgba(46, 100, 23, 0.92);
+  font-size: 1.02rem;
+  line-height: 1.78;
+  letter-spacing: 0.01em;
+}
+
+.portfolio-hero .ux-intro + .ux-intro {
+  margin-top: 14px;
+}
 
 .ux-comparison-section {
   margin-top: 14px;
@@ -2636,6 +2519,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 22px;
+  padding: clamp(1.35rem, 2vw, 2rem);
 }
 
 .ux-comparison-header {
@@ -2646,6 +2530,7 @@ a {
 
 .ux-comparison-title {
   margin-bottom: 0;
+  font-size: clamp(1.45rem, 2vw, 1.9rem);
 }
 
 .ux-comparison-takeaway {
@@ -2658,7 +2543,8 @@ a {
 
 .ux-comparison-description {
   margin: 0;
-  max-width: 78ch;
+  max-width: 74ch;
+  line-height: 1.72;
 }
 
 .ux-comparison-grid {
@@ -2672,6 +2558,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-width: 0;
 }
 
 .ux-comparison-label {
@@ -2692,9 +2579,9 @@ a {
 
 .ux-comparison-subtitle {
   margin: 0;
-  font-size: 0.84rem;
-  line-height: 1.45;
-  color: rgba(17, 17, 17, 0.52);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(17, 17, 17, 0.58);
 }
 
 .ux-comparison-subtitle-improved {
@@ -2706,6 +2593,7 @@ a {
   padding: 0;
   background: transparent;
   border: 0;
+  cursor: zoom-in;
 }
 
 .ux-comparison-image-wrap {
@@ -2744,6 +2632,35 @@ a {
   display: block;
 }
 
+.portfolio-project-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.portfolio-project-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 80, 80, 0.22);
+  background: #fff;
+  color: var(--green);
+  font-size: 1.08rem;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease,
+    color 0.2s ease;
+}
+
+.portfolio-project-icon-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 80, 80, 0.38);
+  color: var(--coral);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
 .ux-reflection-section {
   margin-top: 18px;
 }
@@ -2780,7 +2697,23 @@ a {
   }
 }
 
+@media (max-width: 900px) {
+  .ux-comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
 @media (max-width: 767px) {
+  .ux-intro {
+    font-size: 0.98rem;
+    line-height: 1.72;
+  }
+
+  .portfolio-hero .ux-intro + .ux-intro {
+    margin-top: 12px;
+  }
+
   .ux-comparison-section {
     margin-top: 12px;
   }
@@ -2803,7 +2736,6 @@ a {
   }
 
   .ux-comparison-grid {
-    grid-template-columns: 1fr;
     gap: 20px;
   }
 
@@ -2831,6 +2763,17 @@ a {
     font-size: 0.68rem;
   }
 
+  .portfolio-project-links {
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .portfolio-project-icon-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
   .ux-reflection-section {
     margin-top: 14px;
   }
@@ -2848,6 +2791,11 @@ a {
 }
 
 @media (max-width: 479px) {
+  .ux-intro {
+    font-size: 0.95rem;
+    line-height: 1.68;
+  }
+
   .ux-comparison-takeaway {
     font-size: 0.93rem;
   }
@@ -2862,24 +2810,14 @@ a {
     font-size: 0.64rem;
   }
 
+  .portfolio-project-icon-link {
+    width: 38px;
+    height: 38px;
+    font-size: 0.98rem;
+  }
+
   .ux-reflection-outcome {
     width: 100%;
-  }
-}
-
-@media (max-width: 900px) {
-  .ux-comparison-grid {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-
-  .ux-comparison-image-wrap {
-    max-height: none;
-    overflow: hidden;
-  }
-
-  .ux-comparison-image-wrap:hover {
-    overflow: hidden;
   }
 }
 
