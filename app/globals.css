@@ -2594,16 +2594,37 @@ a {
   background: transparent;
   border: 0;
   cursor: zoom-in;
+  text-align: left;
 }
 
 .ux-comparison-image-wrap {
   position: relative;
+  width: 100%;
+  min-height: 220px;
+  max-height: 420px;
   overflow: hidden;
   border-radius: 18px;
+  border: 1.5px solid rgba(255, 80, 80, 0.22);
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.ux-comparison-image-wrap:hover {
+  overflow-y: auto;
+  border-color: rgba(255, 80, 80, 0.38);
+  transform: scale(1.01);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .ux-comparison-image-wrap-improved {
-  box-shadow: 0 0 0 1px rgba(46, 100, 23, 0.14);
+  box-shadow: 0 0 0 1px rgba(46, 100, 23, 0.14), 0 10px 26px rgba(0, 0, 0, 0.04);
+}
+
+.ux-comparison-image-wrap-improved:hover {
+  border-color: rgba(46, 100, 23, 0.3);
+  box-shadow: 0 0 0 1px rgba(46, 100, 23, 0.18), 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .ux-improved-badge {
@@ -2630,6 +2651,24 @@ a {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.ux-comparison-image-wrap::-webkit-scrollbar {
+  width: 10px;
+}
+
+.ux-comparison-image-wrap::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 999px;
+}
+
+.ux-comparison-image-wrap::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 999px;
+}
+
+.ux-comparison-image-wrap::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.28);
 }
 
 .portfolio-project-links {
@@ -2701,6 +2740,20 @@ a {
   .ux-comparison-grid {
     grid-template-columns: 1fr;
     gap: 22px;
+  }
+
+  .ux-comparison-image-wrap {
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .ux-comparison-image-wrap:hover {
+    overflow: hidden;
+    transform: none;
+  }
+
+  .ux-comparison-image-wrap-improved:hover {
+    box-shadow: 0 0 0 1px rgba(46, 100, 23, 0.14), 0 10px 26px rgba(0, 0, 0, 0.04);
   }
 }
 
