@@ -122,10 +122,10 @@ export default function XtremeConcreteUXPage() {
           <h1 className="portfolio-title">UX &amp; SEO Exploration</h1>
 
           <p className="portfolio-intro ux-intro">
-            This case study explores a redesigned UX and SEO approach 
-            for Xtreme Concrete Cutting & Demolition, focused on improving 
-            clarity, strengthening local search visibility, and creating a 
-            more direct path from first impression to conversion.
+            This case study explores a redesigned UX and SEO approach for 
+            Xtreme Concrete Cutting & Demolition, focused on improving clarity, 
+            strengthening local search visibility, and creating a more direct 
+            path to conversion.
           </p>
 
           <a href="/portfolio" className="portfolio-project-ux-button">
@@ -144,12 +144,10 @@ export default function XtremeConcreteUXPage() {
             </h2>
 
             <p className="portfolio-project-description">
-              This UX and SEO exploration reimagines the Xtreme Concrete 
-              Cutting & Demolition website with a stronger focus on content 
-              hierarchy, service clarity, and local search relevance. The 
-              goal was to create a more structured experience that clearly 
-              communicates services, reinforces trust, and guides users more 
-              efficiently toward taking action.
+              This UX and SEO exploration reimagines the Xtreme Concrete Cutting & 
+              Demolition website with a stronger focus on content hierarchy, 
+              service clarity, and local relevance, creating a more structured and 
+              conversion-focused experience.
             </p>
 
             <div className="portfolio-project-links">
@@ -262,12 +260,8 @@ The UX and SEO version introduces a clearer layout, supporting content, and loca
             <h2 className="portfolio-project-title">Reflection</h2>
 
             <p className="portfolio-project-description">
-              This exploration highlights how strategic improvements to messaging, 
-              structure, and conversion flow can significantly enhance both user 
-              experience and search performance. By aligning content with real 
-              user intent and local search behavior, the UX and SEO version 
-              creates a clearer, more actionable experience without changing the 
-              core business offering.
+              This exploration shows how targeted improvements to structure, messaging, 
+              and conversion flow can enhance both user experience and search visibility.
             </p>
 
             <div className="ux-reflection-outcomes">
