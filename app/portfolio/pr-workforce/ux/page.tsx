@@ -122,11 +122,11 @@ export default function PRWorkforceUXPage() {
           <h1 className="portfolio-title">UX &amp; SEO Exploration</h1>
 
           <p className="portfolio-intro ux-intro">
-            This UX and SEO exploration presents an alternative direction for
-            the P&amp;R Workforce website, focused on improving how quickly
-            users understand the service and what action to take. The goal was
-            not to change the business, but to present the same staffing offer
-            with more clarity for both employers and job seekers.
+            This UX and SEO exploration presents an alternative direction for the
+            P&amp;R Workforce website, focused on improving how quickly users
+            understand the service and what action to take. The goal was not to
+            change the business, but to present the same staffing offer with
+            more clarity for both employers and job seekers.
           </p>
 
           <p className="portfolio-intro ux-intro">

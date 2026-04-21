@@ -2494,7 +2494,7 @@ a {
   margin-top: 16px;
 }
 
-//* =========================
+/* =========================
    UX + SEO EXPLORATION PAGE
 ========================= */
 
@@ -2535,15 +2535,26 @@ a {
 
 .ux-comparison-takeaway {
   margin: 0;
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   line-height: 1.45;
   font-weight: 700;
-  color: rgba(17, 17, 17, 0.9);
+  color: #111111;
+}
+
+.ux-comparison-takeaway::before {
+  content: "Key improvement";
+  display: block;
+  margin-bottom: 3px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.42);
 }
 
 .ux-comparison-description {
   margin: 0;
-  max-width: 72ch;
+  max-width: 66ch;
   line-height: 1.68;
 }
 
@@ -2572,6 +2583,7 @@ a {
 
 .ux-comparison-label-client {
   color: rgba(17, 17, 17, 0.62);
+  opacity: 0.6;
 }
 
 .ux-comparison-label-ux {
@@ -2609,7 +2621,7 @@ a {
   overflow: hidden;
   border-radius: 18px;
   border: 1.5px solid rgba(255, 80, 80, 0.22);
-  background: #fff;
+  background: #fafafa;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
   transition: transform 0.25s ease, box-shadow 0.25s ease,
     border-color 0.25s ease;
@@ -2618,7 +2630,7 @@ a {
 .ux-comparison-image-wrap:hover {
   overflow-y: auto;
   border-color: rgba(255, 80, 80, 0.38);
-  transform: scale(1.01);
+  transform: scale(1.015);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -2715,7 +2727,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin: 22px 0;
+  margin: 24px 0;
 }
 
 .ux-reflection-outcome {
@@ -2797,7 +2809,7 @@ a {
   }
 
   .ux-comparison-takeaway {
-    font-size: 0.97rem;
+    font-size: 0.98rem;
     line-height: 1.42;
   }
 
@@ -2867,7 +2879,7 @@ a {
   }
 
   .ux-comparison-takeaway {
-    font-size: 0.93rem;
+    font-size: 0.94rem;
   }
 
   .ux-comparison-subtitle {
