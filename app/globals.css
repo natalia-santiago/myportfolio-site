@@ -2515,17 +2515,22 @@ a {
   margin-top: 28px;
 }
 
+.ux-comparison-section + .ux-comparison-section {
+  margin-top: 20px;
+}
+
 .ux-comparison-card {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 26px;
   padding: clamp(1.35rem, 2vw, 2rem);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
 }
 
 .ux-comparison-header {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .ux-comparison-title {
@@ -2534,11 +2539,11 @@ a {
 }
 
 .ux-comparison-takeaway {
-  margin: 0;
   font-size: 1.05rem;
-  line-height: 1.45;
   font-weight: 700;
-  color: #111111;
+  color: #111;
+  padding-left: 12px;
+  border-left: 3px solid var(--coral);
 }
 
 .ux-comparison-takeaway::before {
@@ -2583,12 +2588,13 @@ a {
 
 .ux-comparison-label-client {
   color: rgba(17, 17, 17, 0.62);
-  opacity: 0.6;
+  opacity: 0.55;
 }
 
 .ux-comparison-label-ux {
   color: #2e6417;
   font-weight: 800;
+  letter-spacing: 0.16em;
 }
 
 .ux-comparison-subtitle {
@@ -2619,7 +2625,7 @@ a {
   min-height: 220px;
   max-height: 420px;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 20px;
   border: 1.5px solid rgba(255, 80, 80, 0.22);
   background: #fafafa;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
@@ -2630,7 +2636,7 @@ a {
 .ux-comparison-image-wrap:hover {
   overflow-y: auto;
   border-color: rgba(255, 80, 80, 0.38);
-  transform: scale(1.015);
+  transform: scale(1.02);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -2719,7 +2725,7 @@ a {
 }
 
 .ux-reflection-section {
-  margin-top: 18px;
+  margin-top: 32px;
 }
 
 .ux-reflection-outcomes {
@@ -2727,7 +2733,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin: 24px 0;
+  margin: 26px 0;
 }
 
 .ux-reflection-outcome {
