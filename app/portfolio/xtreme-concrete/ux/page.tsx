@@ -122,20 +122,10 @@ export default function XtremeConcreteUXPage() {
           <h1 className="portfolio-title">UX &amp; SEO Exploration</h1>
 
           <p className="portfolio-intro ux-intro">
-            This case study presents a redesigned UX and SEO exploration for
-            Xtreme Concrete Cutting &amp; Demolition, created as an alternative
-            direction to the final client version. The goal was to explore how a
-            more structured homepage, clearer service messaging, and stronger
-            local SEO signals could improve how the business is understood by
-            both visitors and search engines.
-          </p>
-
-          <p className="portfolio-intro ux-intro">
-            Rather than changing the company itself, this exploration focuses on
-            improving how the company is presented online. It highlights ways to
-            make trust building faster, navigation more intuitive, conversion
-            paths more direct, and service pages more supportive of local search
-            visibility while still respecting the same core business offering.
+            This case study explores a redesigned UX and SEO approach 
+            for Xtreme Concrete Cutting & Demolition, focused on improving 
+            clarity, strengthening local search visibility, and creating a 
+            more direct path from first impression to conversion.
           </p>
 
           <a href="/portfolio" className="portfolio-project-ux-button">
@@ -154,14 +144,12 @@ export default function XtremeConcreteUXPage() {
             </h2>
 
             <p className="portfolio-project-description">
-              This UX and SEO exploration reimagines the Xtreme Concrete Cutting
-              &amp; Demolition website through a more strategy driven lens. The
-              focus was on improving content hierarchy, strengthening the
-              homepage message, presenting services more clearly, and creating a
-              smoother path from first impression to contact. It also explores
-              how better structured sections, stronger internal linking, and
-              more intentional local SEO content can make a service business
-              website feel more polished, credible, and easier to find.
+              This UX and SEO exploration reimagines the Xtreme Concrete 
+              Cutting & Demolition website with a stronger focus on content 
+              hierarchy, service clarity, and local search relevance. The 
+              goal was to create a more structured experience that clearly 
+              communicates services, reinforces trust, and guides users more 
+              efficiently toward taking action.
             </p>
 
             <div className="portfolio-project-links">
@@ -190,8 +178,8 @@ export default function XtremeConcreteUXPage() {
 
         <ComparisonSection
           title="Homepage"
-          takeaway="Improves first impression, trust, and service clarity from the first screen."
-          description="In the client version, important business information competes for attention early, which can make the core offer less immediate. The UX and SEO exploration simplifies the hierarchy, clarifies what the company does, and structures the homepage more intentionally so users can understand the business faster while search engines can more easily interpret the page focus."
+          takeaway="Clear, location-based messaging improves clarity and search relevance."
+          description="The client version uses a broad headline that lacks clear service and location context. The UX and SEO version introduces a keyword-focused headline that immediately communicates what the business does and where it operates, improving both user understanding and SEO performance."
           before="/images/homepage-xtreme.jpeg"
           after="/images/ux-homepage-xtreme.jpeg"
           beforeAlt="Xtreme homepage client version"
@@ -200,8 +188,8 @@ export default function XtremeConcreteUXPage() {
 
         <ComparisonSection
           title="Hero Section"
-          takeaway="Makes the company’s offer clearer and the next action easier to identify."
-          description="The client version introduces the business, but the main value proposition and call to action are less direct. The UX and SEO exploration strengthens the headline, improves supporting copy, and gives the primary action more emphasis so visitors understand the service immediately while the hero aligns more clearly with relevant service based search intent."
+          takeaway="Stronger first impression through clear, service-focused messaging."
+          description="The client version uses a generic headline that does not clearly define the service. The UX and SEO version introduces a direct, keyword-focused headline with supporting trust signals, improving clarity, credibility, and immediate user understanding."
           before="/images/hero-xtreme.png"
           after="/images/ux-hero-xtreme.png"
           beforeAlt="Xtreme hero client version"
@@ -210,8 +198,8 @@ export default function XtremeConcreteUXPage() {
 
         <ComparisonSection
           title="Navigation"
-          takeaway="Creates a clearer path through the site and supports stronger discoverability."
-          description="The client version includes the essential links, but the structure is less supportive of fast scanning and service discovery. The UX and SEO exploration organizes navigation more clearly, helping users move through the website more confidently while improving internal linking and making site content easier to crawl."
+          takeaway="Improved navigation clarity strengthens usability and internal linking."
+          description="The client version uses a minimal navigation structure with limited page access. The UX and SEO version introduces clearer navigation, adds a dedicated contact page, and improves internal linking, making it easier for users and search engines to explore the site."
           before="/images/navigation-xtreme.png"
           after="/images/ux-navigation-xtreme.png"
           beforeAlt="Xtreme navigation client version"
@@ -220,8 +208,8 @@ export default function XtremeConcreteUXPage() {
 
         <ComparisonSection
           title="About Section"
-          takeaway="Builds trust faster by making the company message easier to understand."
-          description="The client version includes business information, but the message is less structured for quick scanning. The UX and SEO exploration improves hierarchy, spacing, and readability so visitors can understand the company more easily while the section does a better job reinforcing professionalism and credibility."
+          takeaway="Location-focused content improves relevance and local SEO visibility."
+          description="The client version provides general business information without strong location targeting. The UX and SEO version introduces location-specific content and service areas, improving clarity for users and strengthening local search relevance."
           before="/images/about-xtreme.png"
           after="/images/ux-about-xtreme.png"
           beforeAlt="Xtreme about section client version"
@@ -230,8 +218,8 @@ export default function XtremeConcreteUXPage() {
 
         <ComparisonSection
           title="Services Section"
-          takeaway="Makes services easier to scan and strengthens service specific SEO clarity."
-          description="In the client version, the available services are present, but the section feels denser and less structured for quick understanding. The UX and SEO exploration improves grouping, spacing, and hierarchy so users can scan concrete cutting and demolition services more easily while the page supports clearer keyword targeting for individual services."
+          takeaway="Clearer service hierarchy improves scannability and search relevance."
+          description="The client version presents services with limited structure and context. The UX and SEO version introduces a clearer heading, improved hierarchy, and more descriptive content, making it easier for users to scan and helping search engines better understand each service."
           before="/images/services-xtreme.png"
           after="/images/ux-services-xtreme.png"
           beforeAlt="Xtreme services client version"
@@ -240,8 +228,8 @@ export default function XtremeConcreteUXPage() {
 
         <ComparisonSection
           title="Equipment Section"
-          takeaway="Adds more structure and makes capabilities easier to understand."
-          description="The client version presents equipment information, but the section is less refined in hierarchy and visual flow. The UX and SEO exploration organizes the content more clearly so visitors can understand the company’s capabilities faster while the page communicates specialization more effectively."
+          takeaway="Structured content improves readability and reinforces key value points."
+          description="The client version presents equipment information in a more text-heavy format. The UX and SEO version introduces bullet points and clearer structure, making the content easier to scan while reinforcing key benefits for both users and search engines."
           before="/images/equipment-xtreme.png"
           after="/images/ux-equipment-xtreme.png"
           beforeAlt="Xtreme equipment section client version"
@@ -249,19 +237,20 @@ export default function XtremeConcreteUXPage() {
         />
 
         <ComparisonSection
-          title="Contact Section"
-          takeaway="Creates a smoother conversion path with clearer hierarchy and better flow."
-          description="The client version includes the necessary contact elements, but the section is less guided visually. The UX and SEO exploration restructures the contact area with clearer form hierarchy, stronger supporting context, and more intentional grouping so visitors can move toward contacting the business more smoothly."
+          title="Contact Page"
+          takeaway="Enhanced contact flow improves conversions and local SEO signals."
+          description="The client version presents a basic contact form with limited structure and context.
+The UX and SEO version introduces a clearer layout, supporting content, and location signals, making it easier for users to submit requests while strengthening search relevance."
           before="/images/contact-xtreme.jpeg"
           after="/images/ux-contact-xtreme.jpeg"
-          beforeAlt="Xtreme contact client version"
+          beforeAlt="Xtreme contact client versioN"
           afterAlt="Xtreme contact UX and SEO exploration"
         />
 
         <ComparisonSection
           title="Mobile Experience"
-          takeaway="Creates a more comfortable and polished experience on smaller screens."
-          description="The client version works on mobile, but some areas feel tighter and less refined in rhythm and spacing. The UX and SEO exploration improves spacing, readability, tap target comfort, and section flow so the mobile experience feels more polished and easier to use while preserving the same business message."
+          takeaway="Mobile-first design improves usability and conversion efficiency."
+          description="The client version presents a more limited mobile experience with less optimized layout and CTA visibility. The UX and SEO version introduces a mobile-first structure with clear CTAs, improved spacing, and stronger messaging, making it easier for users to take action and improving overall engagement."
           before="/images/xtreme2.jpeg"
           after="/images/ux-mobile-xtreme.jpeg"
           beforeAlt="Xtreme mobile client version"
@@ -273,9 +262,12 @@ export default function XtremeConcreteUXPage() {
             <h2 className="portfolio-project-title">Reflection</h2>
 
             <p className="portfolio-project-description">
-              This exploration shows how thoughtful changes to hierarchy,
-              service presentation, content structure, and conversion flow can
-              improve both user understanding and search visibility.
+              This exploration highlights how strategic improvements to messaging, 
+              structure, and conversion flow can significantly enhance both user 
+              experience and search performance. By aligning content with real 
+              user intent and local search behavior, the UX and SEO version 
+              creates a clearer, more actionable experience without changing the 
+              core business offering.
             </p>
 
             <div className="ux-reflection-outcomes">
@@ -289,10 +281,10 @@ export default function XtremeConcreteUXPage() {
             </div>
 
             <p className="portfolio-project-description">
-              While the client version reflects real collaboration and client
-              priorities, this alternative approach shows how targeted UX and
-              SEO refinements can create a clearer experience, stronger search
-              visibility, and a more effective website overall.
+              While the client version reflects real-world constraints and 
+              priorities, this alternative approach demonstrates how 
+              focused UX and SEO decisions can create a more effective and 
+              competitive digital presence.
             </p>
           </article>
         </section>

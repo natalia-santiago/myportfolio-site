@@ -34,7 +34,7 @@ export default function PortfolioPage() {
                   </p>
 
                   <h2 className="portfolio-project-title">
-                    Xtreme Concrete Cutting &amp; Demolition LLC
+                    Xtreme Concrete Cutting &amp; Demolition 
                   </h2>
 
                   <p className="portfolio-project-description">
@@ -249,12 +249,12 @@ export default function PortfolioPage() {
                     type="button"
                     className="portfolio-project-image-button"
                     onClick={() => setSelectedImage("/images/pr-portfolio1.png")}
-                    aria-label="Open P&R Workforce preview image 1"
+                    aria-label="Open P&R Workforce LLC preview image 1"
                   >
                     <div className="portfolio-project-image-wrap portfolio-hover-zoom">
                       <img
                         src="/images/pr-portfolio1.png"
-                        alt="P&R Workforce homepage preview showing the live client website layout and branding."
+                        alt="P&R Workforce LLC homepage preview showing the live client website layout and branding."
                         className="portfolio-project-image"
                       />
                       <div
@@ -270,12 +270,12 @@ export default function PortfolioPage() {
                     type="button"
                     className="portfolio-project-image-button"
                     onClick={() => setSelectedImage("/images/pr-portfolio2.png")}
-                    aria-label="Open P&R Workforce preview image 2"
+                    aria-label="Open P&R Workforce LLC preview image 2"
                   >
                     <div className="portfolio-project-image-wrap portfolio-hover-zoom">
                       <img
                         src="/images/pr-portfolio2.png"
-                        alt="P&R Workforce website preview showing a second view of the client website design and responsive presentation."
+                        alt="P&R Workforce LLC website preview showing a second view of the client website design and responsive presentation."
                         className="portfolio-project-image"
                       />
                       <div

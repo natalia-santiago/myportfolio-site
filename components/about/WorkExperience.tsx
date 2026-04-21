@@ -415,7 +415,7 @@ export default function WorkExperience() {
                     <img
                       key={img}
                       src={img}
-                      alt={`P&R Workforce Website Screenshot ${i + 1}`}
+                      alt={`P&R Workforce LLC Website Screenshot ${i + 1}`}
                       className="work-image"
                       onClick={() => setSelectedImage(img)}
                     />

@@ -123,7 +123,7 @@ export default function PRWorkforceUXPage() {
 
           <p className="portfolio-intro ux-intro">
             This UX and SEO exploration presents an alternative direction for the
-            P&amp;R Workforce website, focused on improving how quickly users
+            P&amp;R Workforce LLC website, focused on improving how quickly users
             understand the service and what action to take. The goal was not to
             change the business, but to present the same staffing offer with
             more clarity for both employers and job seekers.
@@ -148,10 +148,10 @@ export default function PRWorkforceUXPage() {
               Client Project • UX &amp; SEO Exploration
             </p>
 
-            <h2 className="portfolio-project-title">P&amp;R Workforce</h2>
+            <h2 className="portfolio-project-title">P&amp;R Workforce LLC</h2>
 
             <p className="portfolio-project-description">
-              This project reimagines the P&amp;R Workforce website with a
+              This project reimagines the P&amp;R Workforce LLC website with a
               stronger focus on clarity, usability, and conversion. The
               exploration prioritizes faster decision making, clearer service
               discovery, and stronger local SEO structure so users can more
@@ -165,7 +165,7 @@ export default function PRWorkforceUXPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="portfolio-project-icon-link"
-                aria-label="View P&R Workforce UX and SEO exploration live website"
+                aria-label="View P&R Workforce LLC UX and SEO exploration live website"
               >
                 <FaGlobe />
               </a>
@@ -175,7 +175,7 @@ export default function PRWorkforceUXPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="portfolio-project-icon-link"
-                aria-label="View P&R Workforce UX and SEO exploration GitHub repository"
+                aria-label="View P&R Workforce LLC UX and SEO exploration GitHub repository"
               >
                 <FaGithub />
               </a>
