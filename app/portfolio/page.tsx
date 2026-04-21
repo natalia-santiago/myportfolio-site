@@ -30,6 +30,142 @@ export default function PortfolioPage() {
               <div className="portfolio-project-content">
                 <div className="portfolio-project-copy">
                   <p className="portfolio-project-eyebrow">
+                    March 2026 · Client Website
+                  </p>
+
+                  <h2 className="portfolio-project-title">
+                    Xtreme Concrete Cutting &amp; Demolition LLC
+                  </h2>
+
+                  <p className="portfolio-project-description">
+                    A production-ready concrete cutting and demolition company
+                    website designed and developed to support performance,
+                    usability, responsive access across devices, and lead
+                    generation.
+                  </p>
+
+                  <ul className="portfolio-project-features">
+                    <li>
+                      Designed and developed a production-ready website tailored
+                      to the construction industry.
+                    </li>
+                    <li>
+                      Built a responsive, mobile-first application using Next.js
+                      and Tailwind CSS.
+                    </li>
+                    <li>
+                      Implemented SEO best practices, metadata, and local
+                      keyword optimization.
+                    </li>
+                    <li>
+                      Integrated contact forms and SMS-based workflows to
+                      streamline client inquiries.
+                    </li>
+                    <li>
+                      Managed deployment, domain configuration, and hosting with
+                      Netlify.
+                    </li>
+                  </ul>
+
+                  <div className="portfolio-project-tags">
+                    <span className="portfolio-project-tag">UI/UX Design</span>
+                    <span className="portfolio-project-tag">
+                      Responsive Web Design
+                    </span>
+                    <span className="portfolio-project-tag">
+                      Front-End Development
+                    </span>
+                    <span className="portfolio-project-tag">Next.js</span>
+                    <span className="portfolio-project-tag">React</span>
+                    <span className="portfolio-project-tag">
+                      Tailwind CSS
+                    </span>
+                  </div>
+
+                  <div className="portfolio-project-links">
+                    <a
+                      href="https://xtremeconcretecutting.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-circle"
+                      aria-label="Live website"
+                    >
+                      <FaGlobe />
+                    </a>
+
+                    <a
+                      href="https://github.com/natalia-santiago/xtreme-concrete-site"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-circle"
+                      aria-label="GitHub repository"
+                    >
+                      <FaGithub />
+                    </a>
+                  </div>
+
+                  <a
+                    href="/portfolio/xtreme-concrete/ux"
+                    className="portfolio-project-ux-button"
+                  >
+                    UX & SEO Exploration
+                  </a>
+                </div>
+
+                <div className="portfolio-project-media">
+                  <button
+                    type="button"
+                    className="portfolio-project-image-button"
+                    onClick={() =>
+                      setSelectedImage("/images/xtreme-portfolio1.png")
+                    }
+                    aria-label="Open Xtreme Concrete preview image 1"
+                  >
+                    <div className="portfolio-project-image-wrap portfolio-hover-zoom">
+                      <img
+                        src="/images/xtreme-portfolio1.png"
+                        alt="Xtreme Concrete Cutting and Demolition website preview showing the live website layout and branding."
+                        className="portfolio-project-image"
+                      />
+                      <div
+                        className="portfolio-image-overlay"
+                        aria-hidden="true"
+                      >
+                        <FaSearchPlus className="portfolio-zoom-icon" />
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    className="portfolio-project-image-button"
+                    onClick={() =>
+                      setSelectedImage("/images/xtreme-portfolio2.png")
+                    }
+                    aria-label="Open Xtreme Concrete preview image 2"
+                  >
+                    <div className="portfolio-project-image-wrap portfolio-hover-zoom">
+                      <img
+                        src="/images/xtreme-portfolio2.png"
+                        alt="Xtreme Concrete Cutting and Demolition website preview showing a second view of the responsive client website."
+                        className="portfolio-project-image"
+                      />
+                      <div
+                        className="portfolio-image-overlay"
+                        aria-hidden="true"
+                      >
+                        <FaSearchPlus className="portfolio-zoom-icon" />
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article className="portfolio-project-card">
+              <div className="portfolio-project-content">
+                <div className="portfolio-project-copy">
+                  <p className="portfolio-project-eyebrow">
                     September 2025 · Client Website
                   </p>
 
@@ -121,7 +257,10 @@ export default function PortfolioPage() {
                         alt="P&R Workforce homepage preview showing the live client website layout and branding."
                         className="portfolio-project-image"
                       />
-                      <div className="portfolio-image-overlay" aria-hidden="true">
+                      <div
+                        className="portfolio-image-overlay"
+                        aria-hidden="true"
+                      >
                         <FaSearchPlus className="portfolio-zoom-icon" />
                       </div>
                     </div>
@@ -139,7 +278,10 @@ export default function PortfolioPage() {
                         alt="P&R Workforce website preview showing a second view of the client website design and responsive presentation."
                         className="portfolio-project-image"
                       />
-                      <div className="portfolio-image-overlay" aria-hidden="true">
+                      <div
+                        className="portfolio-image-overlay"
+                        aria-hidden="true"
+                      >
                         <FaSearchPlus className="portfolio-zoom-icon" />
                       </div>
                     </div>
@@ -222,7 +364,10 @@ export default function PortfolioPage() {
                         alt="Job Tracker dashboard showing job application records, filters, and performance metrics."
                         className="portfolio-project-image"
                       />
-                      <div className="portfolio-image-overlay" aria-hidden="true">
+                      <div
+                        className="portfolio-image-overlay"
+                        aria-hidden="true"
+                      >
                         <FaSearchPlus className="portfolio-zoom-icon" />
                       </div>
                     </div>
@@ -242,7 +387,10 @@ export default function PortfolioPage() {
                         alt="Job Tracker add job page showing the form used to create and store new application records."
                         className="portfolio-project-image"
                       />
-                      <div className="portfolio-image-overlay" aria-hidden="true">
+                      <div
+                        className="portfolio-image-overlay"
+                        aria-hidden="true"
+                      >
                         <FaSearchPlus className="portfolio-zoom-icon" />
                       </div>
                     </div>
