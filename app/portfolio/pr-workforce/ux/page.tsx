@@ -147,7 +147,7 @@ export default function PRWorkforceUXPage() {
             </p>
 
             <h2 className="portfolio-project-title">
-              P&amp;R Workforce UX &amp; SEO Exploration
+              P&amp;R Workforce 
             </h2>
 
             <p className="portfolio-project-description">

@@ -148,7 +148,7 @@ export default function XtremeConcreteUXPage() {
             </p>
 
             <h2 className="portfolio-project-title">
-              Xtreme Concrete Cutting &amp; Demolition UX &amp; SEO Exploration
+              Xtreme Concrete Cutting &amp; Demolition 
             </h2>
 
             <p className="portfolio-project-description">
@@ -238,7 +238,7 @@ export default function XtremeConcreteUXPage() {
           title="Mobile Experience"
           takeaway="Creates a more comfortable and polished experience on smaller screens."
           description="The client version works on mobile, but some areas feel tighter and less refined in rhythm and spacing. The UX and SEO exploration improves spacing, readability, tap target comfort, and section flow so the mobile experience feels more polished and easier to use while preserving the same business message."
-          before="/images/xtreme-portfolio1.png"
+          before="/images/xtreme2.jpeg"
           after="/images/ux-mobile-xtreme.jpeg"
           beforeAlt="Xtreme mobile client version"
           afterAlt="Xtreme mobile UX and SEO exploration"

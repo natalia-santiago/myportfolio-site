@@ -46,7 +46,7 @@ export default function PortfolioPage() {
 
                   <ul className="portfolio-project-features">
                     <li>
-                      Designed and developed a production-ready website tailored
+                      Developed a production-ready website tailored
                       to the construction industry.
                     </li>
                     <li>
