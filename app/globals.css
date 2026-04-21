@@ -2527,6 +2527,10 @@ a {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
 }
 
+.ux-comparison-section:nth-child(even) .ux-comparison-card {
+  background: rgba(255, 255, 255, 0.6);
+}
+
 .ux-comparison-header {
   display: flex;
   flex-direction: column;
