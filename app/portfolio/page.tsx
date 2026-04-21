@@ -45,24 +45,19 @@ export default function PortfolioPage() {
 
                   <ul className="portfolio-project-features">
                     <li>
-                      Designed and developed a custom website tailored to the
-                      client’s brand and goals.
+                      Designed and developed a custom website from scratch.
                     </li>
                     <li>
-                      Built a responsive experience with strong mobile usability
-                      and clear service presentation.
+                      Built a responsive experience optimized for mobile users.
                     </li>
                     <li>
-                      Created custom layouts and front-end components to support
-                      a polished user experience.
+                      Created custom layouts and polished front-end components.
                     </li>
                     <li>
-                      Integrated contact functionality, foundational SEO, and
-                      performance-focused improvements.
+                      Integrated contact features, SEO, and performance improvements.
                     </li>
                     <li>
-                      Collaborated directly with the client through implementation
-                      and deployment.
+                      Collaborated directly with the client from build to launch.
                     </li>
                   </ul>
 
