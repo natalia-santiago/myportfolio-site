@@ -3750,11 +3750,15 @@ a {
 
   /* Licenses & Certifications: add a bit more space below "About Me" */
   .licenses-page .about-title {
-    margin: 22px 0 14px;
+    margin: 24px 0 18px;
+  }
+
+  .licenses-section {
+    margin-top: 6px;
   }
 
   .licenses-section-title {
-    margin: 18px 0 16px;
+    margin: 22px 0 16px;
   }
 }
 
