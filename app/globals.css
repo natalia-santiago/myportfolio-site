@@ -2899,7 +2899,7 @@ a {
 
   .main-nav {
     width: 100%;
-    margin-top: 14px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
   }
@@ -2934,18 +2934,23 @@ a {
   .nav-link,
   .nav-dropdown-trigger {
     display: flex !important;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    min-height: 32px;
+    min-height: 24px;
     font-size: 0.7rem !important;
-    line-height: 1.05 !important;
+    line-height: 1 !important;
     white-space: normal !important;
     text-align: center;
+    padding: 0 !important;
   }
 
   .nav-link-text {
-    display: block;
-    width: 100%;
+    display: inline-block;
+  }
+
+  .main-menu a.active-menu-link::after,
+  .nav-dropdown-trigger.active-menu-link::after {
+    bottom: -4px;
   }
 
   .nav-dropdown-menu {
