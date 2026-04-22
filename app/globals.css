@@ -2899,7 +2899,7 @@ a {
 
   .main-nav {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 14px;
     display: flex;
     justify-content: center;
   }
@@ -2909,11 +2909,10 @@ a {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    align-items: flex-start !important;
-    column-gap: 12px !important;
-    row-gap: 8px !important;
+    align-items: center !important;
+    gap: 10px 16px !important;
     width: 100% !important;
-    max-width: 292px !important;
+    max-width: 300px !important;
     margin: 0 auto !important;
     padding: 0 !important;
     list-style: none !important;
@@ -2923,11 +2922,9 @@ a {
   .main-menu li {
     margin: 0 !important;
     padding: 0 !important;
-    flex: 0 0 64px !important;
-    width: 64px !important;
-    min-width: 64px;
-    max-width: 64px;
-    text-align: center;
+    flex: 0 0 auto !important;
+    min-width: unset !important;
+    max-width: unset !important;
   }
 
   .main-menu a,
@@ -2939,9 +2936,9 @@ a {
     min-height: 24px;
     font-size: 0.7rem !important;
     line-height: 1 !important;
-    white-space: normal !important;
+    white-space: nowrap !important;
     text-align: center;
-    padding: 0 !important;
+    padding: 2px 4px !important;
   }
 
   .nav-link-text {
@@ -2950,7 +2947,8 @@ a {
 
   .main-menu a.active-menu-link::after,
   .nav-dropdown-trigger.active-menu-link::after {
-    bottom: -4px;
+    bottom: -2px;
+    height: 2px;
   }
 
   .nav-dropdown-menu {
@@ -3815,14 +3813,14 @@ a {
   .main-menu,
   .main-menu ul {
     max-width: 280px !important;
-    column-gap: 10px !important;
+    gap: 10px 14px !important;
   }
 
   .main-menu li {
-    flex: 0 0 60px !important;
-    width: 60px !important;
-    min-width: 60px;
-    max-width: 60px;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: unset !important;
+    max-width: unset !important;
   }
 
   .nav-link,
@@ -3830,6 +3828,7 @@ a {
   .nav-dropdown-trigger {
     font-size: 0.68rem !important;
     line-height: 1.02 !important;
+    white-space: nowrap !important;
   }
 
   .hero-copy {
