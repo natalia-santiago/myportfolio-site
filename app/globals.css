@@ -3696,79 +3696,61 @@ a {
     margin-top: 18px;
   }
 
-  /* =========================
-    FINAL ABOUT + NAV FIXES
+    /* =========================
+     TARGETED ABOUT SUBPAGE FIXES
   ========================= */
 
-  /* ---------- NAV SPACING FIX ---------- */
-  .main-menu,
-  .main-menu ul {
-    column-gap: 16px !important;
-    row-gap: 10px !important;
-    max-width: 320px !important;
-  }
-
-  .main-menu li {
-    flex: 0 0 auto !important;
-  }
-
-  .main-menu a,
-  .nav-link,
-  .nav-dropdown-trigger {
-    font-size: 0.78rem !important;
-    white-space: nowrap !important;
-    padding: 2px 4px;
-  }
-
-  /* Fix underline position */
-  .active-menu-link::after {
-    bottom: -6px;
-  }
-
-  /* ---------- GLOBAL ABOUT TITLE ---------- */
-  .about-title {
-    margin: 20px 0 6px;
-  }
-
-  /* ---------- OVERVIEW (MORE SPACE) ---------- */
+  /* Overview: add a bit more space below "About Me" */
   .about-page .about-title {
-    margin: 22px 0 10px;
+    margin: 20px 0 10px;
   }
 
-  /* ---------- EDUCATION (REDUCE GAP) ---------- */
+  /* Education: reduce the gap below "About Me" */
   .education-page-section {
     margin-top: 12px;
   }
 
+  .education-page-section .work-title,
   .education-subsection-title {
+    margin-top: 0;
     margin-bottom: 14px;
   }
 
-  /* ---------- SKILLS (ALIGN FIX) ---------- */
-  .skills-page-heading {
-    text-align: left;
-    align-items: flex-start;
-  }
-
-  .skills-page-intro {
-    margin: 0;
-  }
-
-  /* ---------- WORK EXPERIENCE (LEFT ALIGN) ---------- */
-  .work-title {
+  /* Work Experience: add slight left padding to the section title */
+  .work-section .work-title {
     padding-left: 4px;
-    margin-bottom: 14px;
   }
 
-  /* ---------- PERSONAL PROJECTS (LEFT ALIGN) ---------- */
+  /* Personal Projects: same slight left padding */
   .personal-projects-section .work-title,
   .personal-projects-title {
     padding-left: 4px;
   }
 
-  /* ---------- LICENSES (MORE SPACE) ---------- */
+  /* Skills: preserve the working alignment */
+  .skills-page .about-title {
+    margin: 20px 0 6px;
+  }
+
+  .skills-page-heading {
+    margin: 28px 0 18px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .skills-main-title {
+    margin: 0 0 14px;
+    padding-left: 0;
+  }
+
+  .skills-page-intro {
+    margin: 0;
+    max-width: 320px;
+  }
+
+  /* Licenses & Certifications: add a bit more space below "About Me" */
   .licenses-page .about-title {
-    margin: 22px 0 10px;
+    margin: 20px 0 10px;
   }
 
   .licenses-section-title {
