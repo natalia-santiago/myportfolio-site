@@ -3695,6 +3695,85 @@ a {
     min-height: 50px;
     margin-top: 18px;
   }
+
+  /* =========================
+    FINAL ABOUT + NAV FIXES
+  ========================= */
+
+  /* ---------- NAV SPACING FIX ---------- */
+  .main-menu,
+  .main-menu ul {
+    column-gap: 16px !important;
+    row-gap: 10px !important;
+    max-width: 320px !important;
+  }
+
+  .main-menu li {
+    flex: 0 0 auto !important;
+  }
+
+  .main-menu a,
+  .nav-link,
+  .nav-dropdown-trigger {
+    font-size: 0.78rem !important;
+    white-space: nowrap !important;
+    padding: 2px 4px;
+  }
+
+  /* Fix underline position */
+  .active-menu-link::after {
+    bottom: -6px;
+  }
+
+  /* ---------- GLOBAL ABOUT TITLE ---------- */
+  .about-title {
+    margin: 20px 0 6px;
+  }
+
+  /* ---------- OVERVIEW (MORE SPACE) ---------- */
+  .about-page .about-title {
+    margin: 22px 0 10px;
+  }
+
+  /* ---------- EDUCATION (REDUCE GAP) ---------- */
+  .education-page-section {
+    margin-top: 12px;
+  }
+
+  .education-subsection-title {
+    margin-bottom: 14px;
+  }
+
+  /* ---------- SKILLS (ALIGN FIX) ---------- */
+  .skills-page-heading {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .skills-page-intro {
+    margin: 0;
+  }
+
+  /* ---------- WORK EXPERIENCE (LEFT ALIGN) ---------- */
+  .work-title {
+    padding-left: 4px;
+    margin-bottom: 14px;
+  }
+
+  /* ---------- PERSONAL PROJECTS (LEFT ALIGN) ---------- */
+  .personal-projects-section .work-title,
+  .personal-projects-title {
+    padding-left: 4px;
+  }
+
+  /* ---------- LICENSES (MORE SPACE) ---------- */
+  .licenses-page .about-title {
+    margin: 22px 0 10px;
+  }
+
+  .licenses-section-title {
+    margin: 18px 0 16px;
+  }
 }
 
 @media (max-width: 767px) {
