@@ -30,12 +30,8 @@ export default function Home() {
         <section className="hero-section">
           <div className="hero-inner fade-in-section">
             <p className="hero-copy">
-              <span className="hero-line">
-                I design, develop, and maintain custom websites from 
-              </span>
-              <span className="hero-line">
-                scratch without using AI builders or pre-made templates.
-              </span>
+              I design, develop, and maintain custom websites from scratch without using AI
+              builders or pre-made templates.
             </p>
 
             <div className="hero-cta-wrap">

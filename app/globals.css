@@ -7,6 +7,10 @@
   --white: #fff8f5;
 }
 
+/* =========================
+   GLOBAL
+========================= */
+
 * {
   box-sizing: border-box;
 }
@@ -36,6 +40,25 @@ a {
 .page-shell main,
 .homepage-main {
   flex: 1;
+}
+
+.anchor-section {
+  height: 0;
+}
+
+.fade-in-section {
+  animation: fadeUp 0.7s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =========================
@@ -1607,7 +1630,9 @@ a {
   height: 900px;
 }
 
-/* CONTACT PAGE */
+/* =========================
+   CONTACT PAGE
+========================= */
 
 .contact-page {
   padding: 56px 24px 100px;
@@ -1797,7 +1822,7 @@ a {
 }
 
 /* =========================
-   PAYMENT PAGE (CLEAN FIXED)
+   PAYMENT PAGE
 ========================= */
 
 .payment-page {
@@ -1806,8 +1831,6 @@ a {
   margin: 0 auto;
   padding: 64px 24px 100px;
 }
-
-/* HERO */
 
 .payment-hero {
   max-width: 760px;
@@ -1843,16 +1866,12 @@ a {
   line-height: 1.7;
 }
 
-/* LAYOUT */
-
 .payment-layout {
   display: grid;
   grid-template-columns: 1.6fr 360px;
   gap: 20px;
   align-items: start;
 }
-
-/* LEFT CARD */
 
 .payment-card {
   padding: 28px;
@@ -1864,6 +1883,12 @@ a {
   flex-direction: column;
   gap: 18px;
   align-self: start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.payment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.08);
 }
 
 .payment-card-title {
@@ -1878,8 +1903,6 @@ a {
   line-height: 1.6;
 }
 
-/* BENEFITS */
-
 .payment-benefits {
   list-style: none;
   padding: 0;
@@ -1891,8 +1914,6 @@ a {
   margin-bottom: 6px;
 }
 
-/* DIVIDER */
-
 .payment-divider {
   width: 100%;
   height: 1px;
@@ -1900,8 +1921,6 @@ a {
   background: rgba(0, 0, 0, 0.04);
   max-width: 520px;
 }
-
-/* CHECKOUT */
 
 .payment-checkout-wrap {
   width: 100%;
@@ -1932,8 +1951,6 @@ a {
   opacity: 0.8;
 }
 
-/* SIDEBAR */
-
 .payment-sidebar {
   position: sticky;
   top: 40px;
@@ -1946,6 +1963,12 @@ a {
   border: 2px solid var(--coral);
   border-radius: 28px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.payment-sidebar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.08);
 }
 
 .payment-sidebar-title {
@@ -1959,8 +1982,6 @@ a {
   margin-top: 14px;
   line-height: 1.6;
 }
-
-/* BUTTON */
 
 .payment-portal-button {
   display: inline-flex;
@@ -1979,17 +2000,6 @@ a {
 .payment-portal-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
-}
-
-.payment-card,
-.payment-sidebar-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.payment-card:hover,
-.payment-sidebar-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.08);
 }
 
 /* =========================
@@ -2028,103 +2038,6 @@ a {
 }
 
 /* =========================
-   PERSONAL PROJECTS RESPONSIVE
-========================= */
-
-@media (max-width: 1100px) {
-  .personal-projects-container {
-    width: min(100%, calc(100% - 40px));
-  }
-}
-
-@media (max-width: 768px) {
-  .personal-projects-section {
-    margin-top: 48px;
-    margin-bottom: 78px;
-  }
-
-  .personal-project-images {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .personal-project-image {
-    max-width: 100%;
-  }
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-  .payment-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .payment-sidebar {
-    position: static;
-  }
-}
-
-@media (max-width: 768px) {
-  .payment-page {
-    padding: 40px 16px 80px;
-  }
-
-  .payment-card,
-  .payment-sidebar-card {
-    padding: 20px;
-    border-radius: 22px;
-  }
-
-  .payment-checkout-wrap {
-    max-width: 100%;
-  }
-}
-
-/* CONTACT PAGE RESPONSIVE */
-
-@media (max-width: 900px) {
-  .contact-card-inner {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-page {
-    padding: 36px 16px 80px;
-  }
-
-  .contact-hero {
-    margin-bottom: 24px;
-  }
-
-  .contact-intro {
-    font-size: 1rem;
-  }
-
-  .contact-card {
-    border-radius: 22px;
-  }
-
-  .contact-card-inner {
-    padding: 20px;
-    gap: 24px;
-  }
-
-  .contact-form-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .contact-submit {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-/* =========================
    LIGHTBOX
 ========================= */
 
@@ -2152,29 +2065,6 @@ a {
 }
 
 /* =========================
-   MISC
-========================= */
-
-.anchor-section {
-  height: 0;
-}
-
-.fade-in-section {
-  animation: fadeUp 0.7s ease both;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* =========================
    PORTFOLIO PAGE
 ========================= */
 
@@ -2189,7 +2079,7 @@ a {
   max-width: 760px;
   margin: 0 auto 36px;
   text-align: center;
-  padding-top: 64px;   
+  padding-top: 64px;
   padding-bottom: 48px;
 }
 
@@ -2284,7 +2174,6 @@ a {
   font-size: 0.98rem;
   line-height: 1.72;
   color: #35562d;
-
   white-space: nowrap;
 }
 
@@ -2318,7 +2207,7 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-top: 12px;
+  margin-top: 18px;
 }
 
 .portfolio-project-links .icon-circle {
@@ -2633,8 +2522,7 @@ a {
   border: 1.5px solid rgba(255, 80, 80, 0.22);
   background: #fafafa;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
-  transition: transform 0.25s ease, box-shadow 0.25s ease,
-    border-color 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .ux-comparison-image-wrap:hover {
@@ -2699,13 +2587,6 @@ a {
   background: rgba(0, 0, 0, 0.28);
 }
 
-.portfolio-project-links {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-top: 18px;
-}
-
 .portfolio-project-icon-link {
   display: inline-flex;
   align-items: center;
@@ -2754,170 +2635,15 @@ a {
   line-height: 1.3;
 }
 
-@media (max-width: 1024px) {
-  .ux-comparison-card {
-    gap: 20px;
-  }
-
-  .ux-comparison-grid {
-    gap: 16px;
-  }
-}
-
-@media (max-width: 900px) {
-  .ux-comparison-grid {
-    grid-template-columns: 1fr;
-    gap: 22px;
-    align-items: start;
-  }
-
-  .ux-comparison-column {
-    height: auto;
-  }
-
-  .ux-comparison-image-button {
-    flex: initial;
-  }
-
-  .ux-comparison-image-wrap {
-    height: auto;
-    max-height: none;
-    overflow: hidden;
-  }
-
-  .ux-comparison-image-wrap:hover {
-    overflow: hidden;
-    transform: none;
-  }
-
-  .ux-comparison-image-wrap-improved:hover {
-    box-shadow: 0 0 0 1px rgba(46, 100, 23, 0.14),
-      0 10px 26px rgba(0, 0, 0, 0.04);
-  }
-}
-
-@media (max-width: 767px) {
-  .ux-intro {
-    font-size: 0.98rem;
-    line-height: 1.72;
-  }
-
-  .portfolio-hero .ux-intro + .ux-intro {
-    margin-top: 12px;
-  }
-
-  .ux-comparison-section {
-    margin-top: 22px;
-  }
-
-  .ux-comparison-card {
-    gap: 18px;
-  }
-
-  .ux-comparison-header {
-    gap: 7px;
-  }
-
-  .ux-comparison-takeaway {
-    font-size: 0.98rem;
-    line-height: 1.42;
-  }
-
-  .ux-comparison-description {
-    max-width: 100%;
-  }
-
-  .ux-comparison-grid {
-    gap: 20px;
-  }
-
-  .ux-comparison-column {
-    gap: 7px;
-  }
-
-  .ux-comparison-label {
-    font-size: 0.74rem;
-  }
-
-  .ux-comparison-subtitle {
-    font-size: 0.8rem;
-  }
-
-  .ux-comparison-image-wrap {
-    border-radius: 16px;
-  }
-
-  .ux-improved-badge {
-    top: 10px;
-    right: 10px;
-    min-height: 26px;
-    padding: 0 9px;
-    font-size: 0.68rem;
-  }
-
-  .portfolio-project-links {
-    gap: 12px;
-    margin-top: 16px;
-  }
-
-  .portfolio-project-icon-link {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
-  }
-
-  .ux-reflection-section {
-    margin-top: 14px;
-  }
-
-  .ux-reflection-outcomes {
-    gap: 8px;
-    margin: 18px 0;
-  }
-
-  .ux-reflection-outcome {
-    min-height: 38px;
-    padding: 0 12px;
-    font-size: 0.84rem;
-  }
-}
-
-@media (max-width: 479px) {
-  .ux-intro {
-    font-size: 0.95rem;
-    line-height: 1.68;
-  }
-
-  .ux-comparison-takeaway {
-    font-size: 0.94rem;
-  }
-
-  .ux-comparison-subtitle {
-    font-size: 0.78rem;
-  }
-
-  .ux-improved-badge {
-    min-height: 24px;
-    padding: 0 8px;
-    font-size: 0.64rem;
-  }
-
-  .portfolio-project-icon-link {
-    width: 38px;
-    height: 38px;
-    font-size: 0.98rem;
-  }
-
-  .ux-reflection-outcome {
-    width: 100%;
-  }
-}
+/* =========================
+   ICON CIRCLE
+========================= */
 
 .icon-circle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 46px;        
+  width: 46px;
   height: 46px;
   border-radius: 999px;
   background: rgba(255, 80, 80, 0.08);
@@ -2931,7 +2657,7 @@ a {
 }
 
 .icon-circle svg {
-  font-size: 1.15rem;   
+  font-size: 1.15rem;
 }
 
 .icon-circle:hover {
@@ -2941,112 +2667,13 @@ a {
   box-shadow: 0 10px 20px rgba(255, 80, 80, 0.15);
 }
 
-@media (max-width: 1024px) {
-  .portfolio-project-content {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .portfolio-project-media {
-    max-width: 760px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .portfolio-page {
-    padding: 36px 16px 76px;
-  }
-
-  .portfolio-hero {
-    margin-bottom: 28px;
-  }
-
-  .portfolio-intro {
-    margin-top: 14px;
-    font-size: 1rem;
-    line-height: 1.72;
-  }
-
-  .portfolio-grid-section {
-    margin-top: 28px;
-  }
-
-  .portfolio-project-card {
-    padding: 24px 20px;
-    border-radius: 22px;
-  }
-
-  .portfolio-project-content {
-    gap: 24px;
-  }
-
-  .portfolio-project-eyebrow {
-    font-size: 0.84rem;
-    line-height: 1.6;
-  }
-
-  .portfolio-project-title {
-    margin-bottom: 14px;
-  }
-
-  .portfolio-project-description {
-    font-size: 0.96rem;
-    line-height: 1.72;
-  }
-
-  .portfolio-project-features {
-    margin-top: 14px;
-  }
-
-  .portfolio-project-features li {
-    font-size: 0.94rem;
-    line-height: 1.68;
-  }
-
-  .portfolio-project-tags {
-    gap: 10px;
-    margin-top: 20px;
-  }
-
-  .portfolio-project-tag {
-    min-height: 36px;
-    padding: 0 12px;
-    font-size: 0.86rem;
-  }
-
-  .portfolio-project-links {
-    margin-top: 20px;
-  }
-
-  .portfolio-project-image-wrap {
-    border-radius: 18px;
-  }
-
-  .portfolio-cta {
-    margin-top: 28px;
-    padding: 26px 20px 24px;
-    border-radius: 22px;
-  }
-
-  .portfolio-cta-text {
-    font-size: 0.96rem;
-    line-height: 1.72;
-  }
-
-  .portfolio-cta-button {
-    width: 100%;
-    min-height: 50px;
-    margin-top: 18px;
-  }
-}
-
 /* =========================
    RESPONSIVE
 ========================= */
 
 @media (max-width: 1100px) {
-  .work-container {
+  .work-container,
+  .personal-projects-container {
     width: min(100%, calc(100% - 40px));
   }
 
@@ -3143,6 +2770,26 @@ a {
   }
 }
 
+@media (max-width: 1024px) {
+  .portfolio-project-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .portfolio-project-media {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .ux-comparison-card {
+    gap: 20px;
+  }
+
+  .ux-comparison-grid {
+    gap: 16px;
+  }
+}
+
 @media (max-width: 1000px) {
   .about-hero {
     padding: 60px 0 90px;
@@ -3162,6 +2809,50 @@ a {
   .about-highlight-card {
     max-width: 420px;
     width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .payment-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-sidebar {
+    position: static;
+  }
+
+  .contact-card-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .ux-comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    align-items: start;
+  }
+
+  .ux-comparison-column {
+    height: auto;
+  }
+
+  .ux-comparison-image-button {
+    flex: initial;
+  }
+
+  .ux-comparison-image-wrap {
+    height: auto;
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .ux-comparison-image-wrap:hover {
+    overflow: hidden;
+    transform: none;
+  }
+
+  .ux-comparison-image-wrap-improved:hover {
+    box-shadow: 0 0 0 1px rgba(46, 100, 23, 0.14),
+      0 10px 26px rgba(0, 0, 0, 0.04);
   }
 }
 
@@ -3466,7 +3157,8 @@ a {
     font-size: clamp(1.65rem, 7vw, 2.15rem);
   }
 
-  .work-section {
+  .work-section,
+  .personal-projects-section {
     margin-top: 48px;
     margin-bottom: 78px;
   }
@@ -3488,9 +3180,14 @@ a {
     line-height: 1.66;
   }
 
-  .work-images {
+  .work-images,
+  .personal-project-images {
     grid-template-columns: 1fr;
     gap: 12px;
+  }
+
+  .personal-project-image {
+    max-width: 100%;
   }
 
   .booking-page {
@@ -3530,105 +3227,217 @@ a {
     min-height: 860px;
   }
 
-  .skills-page .about-title-wrap,
-  .licenses-page .about-title-wrap {
-    margin-bottom: 10px;
+  .contact-page {
+    padding: 36px 16px 80px;
   }
 
-  .skills-page .about-title,
-  .licenses-page .about-title,
-  .about-page .about-title {
-    margin: 36px 0 0;
+  .contact-hero {
+    margin-bottom: 24px;
   }
 
-  .skills-page-heading {
-    margin: 48px auto 20px;
-    gap: 8px;
+  .contact-intro {
+    font-size: 1rem;
   }
 
-  .skills-page-intro {
-    font-size: 0.96rem;
-    line-height: 1.65;
-    max-width: 320px;
+  .contact-card {
+    border-radius: 22px;
   }
 
-  .skills-category-list {
+  .contact-card-inner {
+    padding: 20px;
+    gap: 24px;
+  }
+
+  .contact-form-grid {
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 
-  .skills-category-card {
-    padding: 20px 16px;
-    border-radius: 20px;
-  }
-
-  .skills-category-title {
-    margin-bottom: 14px;
-    font-size: 1.02rem;
-  }
-
-  .skills-pill-group {
-    gap: 9px;
-  }
-
-  .skills-pill {
-    padding: 9px 13px;
-    font-size: 0.88rem;
-  }
-
-  .skills-toggle-button {
+  .contact-submit {
     width: 100%;
-    max-width: 220px;
+    justify-content: center;
   }
 
-  .licenses-section {
-    margin-top: 0;
-    padding-top: 0;
+  .payment-page {
+    padding: 40px 16px 80px;
   }
 
-  .licenses-section-title {
-    margin: 48px 0 18px;
+  .payment-card,
+  .payment-sidebar-card {
+    padding: 20px;
+    border-radius: 22px;
   }
 
-  .license-card-header {
-    gap: 0.75rem;
+  .payment-checkout-wrap {
+    max-width: 100%;
   }
 
-  .license-title {
-    font-size: 1.2rem;
-    line-height: 1.2;
+  .portfolio-page {
+    padding: 36px 16px 76px;
   }
 
-  .license-description,
-  .license-bullets li {
-    font-size: 0.92rem;
-    line-height: 1.62;
+  .portfolio-hero {
+    margin-bottom: 28px;
   }
 
-  .course-card {
-    padding: 16px 16px 18px;
+  .portfolio-intro {
+    margin-top: 14px;
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  .portfolio-grid-section {
+    margin-top: 28px;
+  }
+
+  .portfolio-project-card {
+    padding: 24px 20px;
+    border-radius: 22px;
+  }
+
+  .portfolio-project-content {
+    gap: 24px;
+  }
+
+  .portfolio-project-eyebrow {
+    font-size: 0.84rem;
+    line-height: 1.6;
+  }
+
+  .portfolio-project-title {
+    margin-bottom: 14px;
+  }
+
+  .portfolio-project-description {
+    font-size: 0.96rem;
+    line-height: 1.72;
+  }
+
+  .portfolio-project-features {
+    margin-top: 14px;
+  }
+
+  .portfolio-project-features li {
+    font-size: 0.94rem;
+    line-height: 1.68;
+  }
+
+  .portfolio-project-tags {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .portfolio-project-tag {
+    min-height: 36px;
+    padding: 0 12px;
+    font-size: 0.86rem;
+  }
+
+  .portfolio-project-links {
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .portfolio-project-image-wrap {
     border-radius: 18px;
   }
 
-  .course-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+  .portfolio-cta {
+    margin-top: 28px;
+    padding: 26px 20px 24px;
+    border-radius: 22px;
   }
 
-  .course-header-right {
+  .portfolio-cta-text {
+    font-size: 0.96rem;
+    line-height: 1.72;
+  }
+
+  .portfolio-cta-button {
     width: 100%;
-    justify-content: space-between;
+    min-height: 50px;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ux-intro {
+    font-size: 0.98rem;
+    line-height: 1.72;
   }
 
-  .education-work-container {
+  .portfolio-hero .ux-intro + .ux-intro {
+    margin-top: 12px;
+  }
+
+  .ux-comparison-section {
+    margin-top: 22px;
+  }
+
+  .ux-comparison-card {
     gap: 18px;
   }
 
-  .education-card,
-  .honor-card,
-  .license-card,
-  .course-card {
-    border-radius: 18px;
+  .ux-comparison-header {
+    gap: 7px;
+  }
+
+  .ux-comparison-takeaway {
+    font-size: 0.98rem;
+    line-height: 1.42;
+  }
+
+  .ux-comparison-description {
+    max-width: 100%;
+  }
+
+  .ux-comparison-grid {
+    gap: 20px;
+  }
+
+  .ux-comparison-column {
+    gap: 7px;
+  }
+
+  .ux-comparison-label {
+    font-size: 0.74rem;
+  }
+
+  .ux-comparison-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .ux-comparison-image-wrap {
+    border-radius: 16px;
+  }
+
+  .ux-improved-badge {
+    top: 10px;
+    right: 10px;
+    min-height: 26px;
+    padding: 0 9px;
+    font-size: 0.68rem;
+  }
+
+  .portfolio-project-icon-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .ux-reflection-section {
+    margin-top: 14px;
+  }
+
+  .ux-reflection-outcomes {
+    gap: 8px;
+    margin: 18px 0;
+  }
+
+  .ux-reflection-outcome {
+    min-height: 38px;
+    padding: 0 12px;
+    font-size: 0.84rem;
   }
 }
 
@@ -3668,5 +3477,36 @@ a {
 
   .footer-credit {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .ux-intro {
+    font-size: 0.95rem;
+    line-height: 1.68;
+  }
+
+  .ux-comparison-takeaway {
+    font-size: 0.94rem;
+  }
+
+  .ux-comparison-subtitle {
+    font-size: 0.78rem;
+  }
+
+  .ux-improved-badge {
+    min-height: 24px;
+    padding: 0 8px;
+    font-size: 0.64rem;
+  }
+
+  .portfolio-project-icon-link {
+    width: 38px;
+    height: 38px;
+    font-size: 0.98rem;
+  }
+
+  .ux-reflection-outcome {
+    width: 100%;
   }
 }
