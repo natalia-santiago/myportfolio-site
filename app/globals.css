@@ -2920,6 +2920,7 @@ a {
     margin: 0 !important;
     padding: 0 !important;
     flex: 0 0 64px !important;
+    width: 64px !important;
     min-width: 64px;
     max-width: 64px;
     text-align: center;
@@ -2928,11 +2929,11 @@ a {
   .main-menu a,
   .nav-link {
     display: flex !important;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    height: 32px;
-    font-size: 0.72rem !important;
-    line-height: 1.1 !important;
+    min-height: 32px;
+    font-size: 0.7rem !important;
+    line-height: 1.05 !important;
     white-space: normal !important;
     text-align: center;
   }
@@ -3193,6 +3194,8 @@ a {
   }
 
   .work-title,
+  .personal-projects-title,
+  .personal-projects-section .work-title,
   .education-subsection-title,
   .skills-main-title,
   .licenses-section-title {
@@ -3211,8 +3214,16 @@ a {
     padding-right: 2px;
   }
 
+  .work-title,
+  .personal-projects-title,
+  .personal-projects-section .work-title {
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 2px;
+  }
+
   .work-title {
-    margin: 0 0 18px;
+    margin-bottom: 18px;
   }
 
   .work-card,
@@ -3794,13 +3805,15 @@ a {
 
   .main-menu li {
     flex: 0 0 60px !important;
+    width: 60px !important;
     min-width: 60px;
     max-width: 60px;
   }
 
   .nav-link,
   .main-menu a {
-    font-size: 0.7rem !important;
+    font-size: 0.68rem !important;
+    line-height: 1.02 !important;
   }
 
   .hero-copy {
