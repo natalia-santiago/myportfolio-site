@@ -2916,7 +2916,6 @@ a {
     margin: 0 auto !important;
     padding: 0 !important;
     list-style: none !important;
-    text-align: center !important;
   }
 
   .main-menu li {
@@ -3144,12 +3143,16 @@ a {
     display: none;
   }
 
+  /* =========================
+     ABOUT PAGES
+  ========================= */
+
   .about-hero {
     padding: 28px 0 44px;
   }
 
   .about-title-wrap {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 
   .about-main,
@@ -3162,12 +3165,12 @@ a {
   }
 
   .about-hero-inner {
-    gap: 22px;
+    gap: 20px;
   }
 
   .about-title {
     font-size: clamp(1.95rem, 7vw, 2.55rem);
-    margin: 24px 0 0;
+    margin: 20px 0 0;
   }
 
   .about-intro {
@@ -3213,30 +3216,28 @@ a {
   .skills-main-title,
   .licenses-section-title {
     font-size: clamp(1.58rem, 6.6vw, 2.08rem);
+    margin-top: 0;
+    margin-bottom: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
   }
 
   .work-section,
-  .personal-projects-section {
-    margin-top: 36px;
-    margin-bottom: 68px;
+  .personal-projects-section,
+  .education-page-section,
+  .skills-section-shell,
+  .licenses-page {
+    margin-top: 28px;
   }
 
   .work-container,
-  .personal-projects-container {
-    padding-left: 2px;
-    padding-right: 2px;
-  }
-
-  .work-title,
-  .personal-projects-title,
-  .personal-projects-section .work-title {
-    padding-left: 4px;
-    padding-right: 2px;
-    margin-left: 2px;
-  }
-
-  .work-title {
-    margin-bottom: 18px;
+  .personal-projects-container,
+  .education-work-container,
+  .skills-container,
+  .licenses-section {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .work-card,
@@ -3280,11 +3281,11 @@ a {
   }
 
   .education-subsection {
-    margin-top: 42px;
+    margin-top: 34px;
   }
 
   .education-subsection-title {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   .honors-award-card {
@@ -3362,25 +3363,27 @@ a {
 
   .skills-page .about-title-wrap,
   .licenses-page .about-title-wrap {
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
 
   .skills-page .about-title,
   .licenses-page .about-title,
   .about-page .about-title {
-    margin: 24px 0 0;
+    margin: 20px 0 0;
   }
 
   .skills-page-heading {
-    margin: 36px auto 18px;
+    margin: 28px 0 18px;
     gap: 8px;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .skills-page-intro {
     font-size: 0.95rem;
     line-height: 1.62;
     max-width: 320px;
-    margin-bottom: 18px;
+    margin: 0;
   }
 
   .skills-category-list {
@@ -3417,7 +3420,7 @@ a {
   }
 
   .licenses-section-title {
-    margin: 36px 0 16px;
+    margin: 28px 0 16px;
   }
 
   .licenses-list {
