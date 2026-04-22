@@ -2919,16 +2919,20 @@ a {
   .main-menu li {
     margin: 0 !important;
     padding: 0 !important;
-    flex: 0 0 62px !important;
-    min-width: 62px;
+    flex: 0 0 64px !important;
+    min-width: 64px;
+    max-width: 64px;
     text-align: center;
   }
 
   .main-menu a,
   .nav-link {
-    display: inline-block !important;
-    font-size: 0.73rem !important;
-    line-height: 1.18 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    font-size: 0.72rem !important;
+    line-height: 1.1 !important;
     white-space: normal !important;
     text-align: center;
   }
@@ -3034,7 +3038,7 @@ a {
 
   .features-section {
     margin-top: 0;
-    padding: 0 0 54px;
+    padding: 0 0 52px;
   }
 
   .features-title {
@@ -3055,7 +3059,7 @@ a {
   }
 
   .feature-card {
-    padding-left: 16px;
+    padding-left: 14px;
   }
 
   .feature-card h3 {
@@ -3071,7 +3075,7 @@ a {
 
   .tech-stack-section {
     margin-top: 0;
-    padding: 0 0 60px;
+    padding: 0 0 52px;
   }
 
   .tech-stack-title {
@@ -3201,13 +3205,21 @@ a {
     margin-bottom: 68px;
   }
 
+  .work-container,
+  .personal-projects-container {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
   .work-title {
     margin: 0 0 18px;
   }
 
-  .work-card {
+  .work-card,
+  .personal-project-card {
     gap: 22px;
-    margin-bottom: 34px;
+    margin-bottom: 42px;
+    padding: 18px 16px;
   }
 
   .work-role {
@@ -3435,13 +3447,21 @@ a {
 
   .booking-card {
     max-width: 100%;
-    padding: 6px;
+    padding: 0;
     border-radius: 20px;
+    overflow: hidden;
   }
 
   .calendly-embed {
+    width: 100%;
     height: 860px;
     min-height: 860px;
+    border-radius: 20px;
+  }
+
+  .calendly-embed iframe {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .contact-page {
@@ -3773,13 +3793,14 @@ a {
   }
 
   .main-menu li {
-    flex: 0 0 58px !important;
-    min-width: 58px;
+    flex: 0 0 60px !important;
+    min-width: 60px;
+    max-width: 60px;
   }
 
   .nav-link,
   .main-menu a {
-    font-size: 0.71rem !important;
+    font-size: 0.7rem !important;
   }
 
   .hero-copy {
