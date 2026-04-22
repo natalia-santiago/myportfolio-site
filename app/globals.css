@@ -3718,13 +3718,13 @@ a {
 
   /* Work Experience: add slight left padding to the section title */
   .work-section .work-title {
-    padding-left: 4px;
+    padding-left: 8px;
   }
 
   /* Personal Projects: same slight left padding */
   .personal-projects-section .work-title,
   .personal-projects-title {
-    padding-left: 4px;
+    padding-left: 8px;
   }
 
   /* Skills: preserve the working alignment */
@@ -3750,7 +3750,7 @@ a {
 
   /* Licenses & Certifications: add a bit more space below "About Me" */
   .licenses-page .about-title {
-    margin: 20px 0 10px;
+    margin: 22px 0 14px;
   }
 
   .licenses-section-title {
