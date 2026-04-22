@@ -138,6 +138,10 @@ a {
   transition: opacity 0.2s ease;
 }
 
+.nav-link-text {
+  display: inline-block;
+}
+
 .nav-link:hover {
   opacity: 0.75;
 }
@@ -2927,7 +2931,8 @@ a {
   }
 
   .main-menu a,
-  .nav-link {
+  .nav-link,
+  .nav-dropdown-trigger {
     display: flex !important;
     align-items: flex-start;
     justify-content: center;
@@ -2936,6 +2941,11 @@ a {
     line-height: 1.05 !important;
     white-space: normal !important;
     text-align: center;
+  }
+
+  .nav-link-text {
+    display: block;
+    width: 100%;
   }
 
   .nav-dropdown-menu {
@@ -3217,7 +3227,7 @@ a {
   .work-title,
   .personal-projects-title,
   .personal-projects-section .work-title {
-    padding-left: 2px;
+    padding-left: 4px;
     padding-right: 2px;
     margin-left: 2px;
   }
@@ -3811,7 +3821,8 @@ a {
   }
 
   .nav-link,
-  .main-menu a {
+  .main-menu a,
+  .nav-dropdown-trigger {
     font-size: 0.68rem !important;
     line-height: 1.02 !important;
   }

@@ -7,14 +7,12 @@ export default function Header() {
   const pathname = usePathname();
 
   const isActive = (href: string) => {
-  if (href === "/") return pathname === "/";
+    if (href === "/") return pathname === "/";
 
-  // Exact match for About Overview
-  if (href === "/about") return pathname === "/about";
+    if (href === "/about") return pathname === "/about";
 
-  // Everything else can use startsWith
-  return pathname.startsWith(href);
-};
+    return pathname.startsWith(href);
+  };
 
   const isAboutActive = pathname.startsWith("/about");
 
@@ -34,7 +32,7 @@ export default function Header() {
                 className={isActive("/") ? "active-menu-link" : ""}
                 style={{ color: isActive("/") ? "var(--coral)" : "var(--green)" }}
               >
-                Home
+                <span className="nav-link-text">Home</span>
               </Link>
             </li>
 
@@ -46,19 +44,25 @@ export default function Header() {
                   color: isActive("/portfolio") ? "var(--coral)" : "var(--green)",
                 }}
               >
-                Portfolio
+                <span className="nav-link-text">Portfolio</span>
               </Link>
             </li>
 
             <li className="nav-dropdown">
               <button
                 type="button"
-                className={isAboutActive ? "nav-dropdown-trigger active-menu-link" : "nav-dropdown-trigger"}
+                className={
+                  isAboutActive
+                    ? "nav-dropdown-trigger active-menu-link"
+                    : "nav-dropdown-trigger"
+                }
                 style={{
                   color: isAboutActive ? "var(--coral)" : "var(--green)",
                 }}
+                aria-haspopup="menu"
+                aria-expanded={isAboutActive ? true : undefined}
               >
-                About Me
+                <span className="nav-link-text">About Me</span>
               </button>
 
               <div className="nav-dropdown-menu">
@@ -148,7 +152,7 @@ export default function Header() {
                   color: isActive("/booking") ? "var(--coral)" : "var(--green)",
                 }}
               >
-                Booking
+                <span className="nav-link-text">Booking</span>
               </Link>
             </li>
 
@@ -160,7 +164,7 @@ export default function Header() {
                   color: isActive("/contact") ? "var(--coral)" : "var(--green)",
                 }}
               >
-                Contact
+                <span className="nav-link-text">Contact</span>
               </Link>
             </li>
 
@@ -172,7 +176,7 @@ export default function Header() {
                   color: isActive("/payments") ? "var(--coral)" : "var(--green)",
                 }}
               >
-                Payments
+                <span className="nav-link-text">Payments</span>
               </Link>
             </li>
           </ul>
