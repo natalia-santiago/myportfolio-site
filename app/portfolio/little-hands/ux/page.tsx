@@ -122,20 +122,18 @@ export default function LittleHandsUXPage() {
           <h1 className="portfolio-title">UX &amp; SEO Exploration</h1>
 
           <p className="portfolio-intro ux-intro">
-            This UX and SEO exploration presents an alternative direction for
-            the Little Hands Mobile Soft Play website, focused on improving how
-            quickly families understand the service, the areas served, and the
-            next step to take. The goal was to keep the brand’s soft and elegant
-            feel while making the website clearer, more actionable, and more
-            search friendly.
+            This UX and SEO exploration reimagines the Little Hands Mobile Soft Play
+            website with a stronger focus on clarity, local search visibility, and
+            conversion. The goal was not to change the service, but to present the same
+            offering in a way that helps parents immediately understand what is offered,
+            where it is available, and how to book.
           </p>
 
           <p className="portfolio-intro ux-intro">
-            By refining section hierarchy, strengthening keyword targeting, and
-            introducing more intentional navigation and calls to action, this
-            exploration shows how the same business can be presented with
-            stronger clarity, better local SEO alignment, and a smoother path to
-            inquiry across desktop and mobile.
+            By refining messaging, restructuring key sections, and introducing more
+            intentional calls to action, this exploration demonstrates how thoughtful UX
+            decisions and SEO strategy can work together to create a clearer, more
+            actionable, and more discoverable experience.
           </p>
 
           <a href="/portfolio" className="portfolio-project-ux-button">
@@ -154,12 +152,11 @@ export default function LittleHandsUXPage() {
             </h2>
 
             <p className="portfolio-project-description">
-              This project reimagines the Little Hands Mobile Soft Play website
-              with a stronger focus on messaging clarity, local SEO, and
-              conversion flow. The exploration prioritizes clearer service
-              discovery, more intentional content structure, and stronger
-              location based relevance so parents can more quickly understand the
-              offer, trust the brand, and take action.
+              This project reimagines the Little Hands Mobile Soft Play website with a
+              stronger emphasis on clarity, local SEO, and conversion flow. The exploration
+              prioritizes immediate understanding of the service, clearer location-based
+              messaging, and more structured content to guide parents from discovery to
+              booking with less friction.
             </p>
 
             <div className="portfolio-project-links">
@@ -272,32 +269,24 @@ export default function LittleHandsUXPage() {
             <h2 className="portfolio-project-title">Reflection</h2>
 
             <p className="portfolio-project-description">
-              This exploration shows how a visually soft and elegant brand can
-              still become more effective through stronger structure, clearer
-              messaging, and more intentional SEO decisions. Rather than changing
-              the business itself, the focus was on presenting the same offer in
-              a way that is easier to scan, easier to trust, and easier to act
-              on.
+              This exploration highlights how small, intentional changes in messaging,
+              structure, and hierarchy can significantly improve how a website performs.
+              Rather than adding new features, the focus was on making the existing content
+              clearer, more discoverable, and more aligned with how users search for and
+              choose local services.
             </p>
 
             <div className="ux-reflection-outcomes">
-              <div className="ux-reflection-outcome">
-                Clearer local SEO targeting
-              </div>
-              <div className="ux-reflection-outcome">
-                Stronger conversion flow
-              </div>
-              <div className="ux-reflection-outcome">
-                More intentional mobile UX
-              </div>
+              <div className="ux-reflection-outcome">Clearer value communication</div>
+              <div className="ux-reflection-outcome">Stronger local SEO relevance</div>
+              <div className="ux-reflection-outcome">More conversion-focused flow</div>
             </div>
 
             <p className="portfolio-project-description">
-              While the client version reflects real world collaboration and
-              business preferences, this alternative direction demonstrates how
-              stronger hierarchy, richer keyword context, and clearer calls to
-              action can improve both discoverability and decision making across
-              the full experience.
+              While the client version reflects real-world collaboration and business
+              priorities, this alternative approach demonstrates how aligning UX decisions
+              with SEO strategy can create a more intuitive, trustworthy, and effective user
+              experience without changing the core service.
             </p>
           </article>
         </section>
