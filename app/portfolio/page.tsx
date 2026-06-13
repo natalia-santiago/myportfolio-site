@@ -26,6 +26,112 @@ export default function PortfolioPage() {
 
         <section className="portfolio-grid-section">
           <div className="portfolio-grid">
+
+            <article className="portfolio-project-card">
+              <div className="portfolio-project-content">
+                <div className="portfolio-project-copy">
+                  <p className="portfolio-project-eyebrow">
+                    April 2026 · Client Website
+                  </p>
+
+                  <h2 className="portfolio-project-title">
+                    Crafty Cati
+                  </h2>
+
+                  <p className="portfolio-project-description">
+                    A custom handmade gifts and workshop website designed and developed 
+                    for a growing local business, focused on responsive design, multilingual 
+                    support, content management, SEO, and scalable client updates.
+                  </p>
+
+                  <ul className="portfolio-project-features">
+                    <li>
+                      Built a custom Next.js website from scratch.
+                    </li>
+
+                    <li>
+                      Developed English and Spanish experiences.
+                    </li>
+
+                    <li>
+                      Added automatic language detection.
+                    </li>
+
+                    <li>
+                      Integrated Cloudinary image management.
+                    </li>
+
+                    <li>
+                      Implemented CMS, SEO, and responsive design.
+                    </li>
+                  </ul>
+
+                  <div className="portfolio-project-tags">
+                    <span className="portfolio-project-tag">Next.js</span>
+                    <span className="portfolio-project-tag">React</span>
+                    <span className="portfolio-project-tag">Tailwind CSS</span>
+                    <span className="portfolio-project-tag">Cloudinary</span>
+                    <span className="portfolio-project-tag">CMS Integration</span>
+                    <span className="portfolio-project-tag">SEO</span>
+                    <span className="portfolio-project-tag">UI/UX Design</span>
+                    <span className="portfolio-project-tag">Responsive Web Design</span>
+                  </div>
+
+                  <div className="portfolio-project-links">
+                    <a
+                      href="https://craftycati.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-circle"
+                      aria-label="Live website"
+                    >
+                      <FaGlobe />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="portfolio-project-media">
+                  <button
+                    type="button"
+                    className="portfolio-project-image-button"
+                    onClick={() =>
+                      setSelectedImage("/images/craftycati-portfolio1.png")
+                    }
+                  >
+                    <div className="portfolio-project-image-wrap portfolio-hover-zoom">
+                      <img
+                        src="/images/craftycati-portfolio1.png"
+                        alt="Crafty Cati homepage showing custom handmade gifts and workshops."
+                        className="portfolio-project-image"
+                      />
+                      <div className="portfolio-image-overlay">
+                        <FaSearchPlus className="portfolio-zoom-icon" />
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    className="portfolio-project-image-button"
+                    onClick={() =>
+                      setSelectedImage("/images/craftycati-portfolio2.png")
+                    }
+                  >
+                    <div className="portfolio-project-image-wrap portfolio-hover-zoom">
+                      <img
+                        src="/images/craftycati-portfolio2.png"
+                        alt="Crafty Cati gallery and workshop experience."
+                        className="portfolio-project-image"
+                      />
+                      <div className="portfolio-image-overlay">
+                        <FaSearchPlus className="portfolio-zoom-icon" />
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </article>
+
             <article className="portfolio-project-card">
               <div className="portfolio-project-content">
                 <div className="portfolio-project-copy">

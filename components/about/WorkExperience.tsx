@@ -21,6 +21,72 @@ export default function WorkExperience() {
             <div className="work-card">
               <div className="work-content">
                 <h3 className="work-role">
+                  Web Developer — Crafty Cati
+                </h3>
+
+                <p className="work-meta">
+                  Freelance • April 2026 • Raleigh, North Carolina — Remote
+                </p>
+
+                <p className="work-description">
+                  Designed and developed a custom website for a handmade gifts and workshops business.
+                </p>
+
+                <ul className="work-list">
+                  <li>Built a custom Next.js website from scratch</li>
+                  <li>Developed English and Spanish experiences</li>
+                  <li>Added automatic language detection</li>
+                  <li>Integrated Cloudinary image management</li>
+                  <li>Implemented CMS, SEO, and responsive design</li>
+                </ul>
+
+                <div className="work-skills">
+                  <div className="work-skills-pills">
+                    <span className="work-skill-pill">Next.js</span>
+                    <span className="work-skill-pill">React</span>
+                    <span className="work-skill-pill">Cloudinary</span>
+                    <span className="work-skill-pill">CMS</span>
+                    <span className="work-skill-pill">SEO</span>
+                    <span className="work-skill-pill">Internationalization (i18n)</span>
+                    <span className="work-skill-pill">Responsive Web Design</span>
+                  </div>
+                </div>
+
+                <div className="work-links">
+                  <a
+                    href="https://craftycati.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="work-icon-link"
+                    aria-label="View live site"
+                    title="View live site"
+                  >
+                    <FaGlobe />
+                  </a>
+
+                  {/* Add GitHub icon later if repo becomes public */}
+                </div>
+              </div>
+
+              <div className="work-images">
+                {[
+                  "/images/craftycati1.jpeg",
+                  "/images/craftycati2.jpeg",
+                ].map((img, i) => (
+                  <img
+                    key={img}
+                    src={img}
+                    alt={`Crafty Cati Website Screenshot ${i + 1}`}
+                    className="work-image"
+                    onClick={() => setSelectedImage(img)}
+                  />
+                ))}
+              </div>
+            </div>
+
+            <div className="work-card">
+              <div className="work-content">
+                <h3 className="work-role">
                   Content Producer — Tucker Trivette Disc Golf
                 </h3>
 
